@@ -33,4 +33,4 @@ Our lab focuses on developing **data-driven optimization** methodologies to solv
 
 We aim to bridge the gap between theoretical foundations and practical applications by combining mathematical modeling with data-centric approaches.
 
-**We are actively recruiting motivated students** who share our passion for research. If you are interested in joining DOLab, 
+**We are actively recruiting motivated students** who share our passion for research. If you are interested in joining DOLab, please reach out via email with your CV and a brief statement of interest. 
