@@ -1,6 +1,19 @@
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi_SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
 
 // Typography
 
@@ -17,7 +30,21 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family:  'Paperozi', sans-serif;
 }
+
+h1,
+strong{
+  color: var(--global-theme-color);
+  font-family:  'Paperozi_SemiBold', sans-serif;
+}
+
+h2,
+h3{
+  color: var(--global-text-color);
+  font-family:  'Paperozi_SemiBold', sans-serif;
+}
+
 
 hr {
   border-top: 1px solid var(--global-divider-color);

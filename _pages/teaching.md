@@ -2,11 +2,16 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Teaching experience and courses.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Teaching Experience
 
-Organize your courses by years, topics, or universities, however you like!
+| Term | Institution | Role | Level | Course | Code | Responsibilities / Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Fall 2025 | Pusan National University | Instructor | Graduate | Shipping & Port Application | DS9700019 | Lecturing; grading; practical sessions; proctoring. |
+| Spring 2024 | Pusan National University | Instructor | Undergraduate | Database | IE3400078-066 | Lecturing; grading; practical sessions; proctoring. |
+| Spring 2024 | Pusan National University | Instructor (team teaching with Prof. Hyerim Bae) | Undergraduate | Data Structure and Algorithm | IE1600795-066 | Practical sessions; grading; proctoring. |
+| Fall 2022 | Pusan National University | Teaching Assistant | Undergraduate | Industrial Data Science | IE3500627-066 | Practical sessions; grading; proctoring. Instructor: Hyerim Bae. |
