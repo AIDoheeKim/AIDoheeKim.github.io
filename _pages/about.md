@@ -10,11 +10,9 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Dohee Kim</p>
-    <p>Department of Artificial Intelligence (AI) Convergence Engineering</p>
-    <p>Changwon National University</p>
-    <p>20, Changwondaehakro, Uichanggu</p>
-    <p>Changwon, Gyeongsangnamdo 51140</p>
-    <p>Republic of Korea</p>
+    <p>055-213-3965</p>
+    <p>국제교류교육원 207호</p>
+    <p>kimdohee@changwon.ac.kr</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -23,15 +21,16 @@ announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! I am **Dohee Kim**, a professor in the Department of Artificial Intelligence (AI) Convergence Engineering at Changwon National University. Our Data Optimization Lab focuses on data-driven decision-making and optimization methodologies.
+Welcome to **DOLab (Data Optimization Lab)**! I am **Dohee Kim**, an Assistant Professor in the Department of Artificial Intelligence Convergence Engineering at Changwon National University.
 
-My research interests include **Time Series Analysis**, **Optimization**, **machine/deep learning-based modeling**, **data analytics**, and designing algorithms that can be applied to real-world problems (e.g., resource allocation, scheduling, and operations/system optimization). I aim to combine mathematical modeling with data-centric approaches to develop solutions that are both interpretable and practical.
+Our lab focuses on developing **data-driven optimization** methodologies to solve complex real-world problems. Key research areas include:
+- Time Series Analysis & Forecasting
+- Machine/Deep Learning-based Modeling
+- Optimization Algorithms (scheduling, resource allocation, operations management)
+- Explainable AI (XAI)
 
-We are currently recruiting motivated students who are interested in working with us.
+We aim to bridge the gap between theoretical foundations and practical applications by combining mathematical modeling with data-centric approaches.
+
+**We are actively recruiting motivated students** who share our passion for research. If you are interested in joining DOLab, 
