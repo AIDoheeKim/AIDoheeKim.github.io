@@ -91,6 +91,16 @@ ninja.data = [{
           description: "2024.03 홈커밍데이",
           section: "Photo",handler: () => {
               window.location.href = "/photo/2024%ED%99%88%EC%BB%A4%EB%B0%8D%EB%8D%B0%EC%9D%B4/";
+            },},{id: "photo-2025-상반기-제주도-선도워크숍",
+          title: '2025_상반기_제주도_선도워크숍',
+          description: "2025년 대한산업공학회",
+          section: "Photo",handler: () => {
+              window.location.href = "/photo/2025%EB%85%84%EC%83%81%EB%B0%98%EA%B8%B0%EC%82%B0%EC%97%85%EA%B3%B5%ED%95%99%ED%9A%8C/";
+            },},{id: "photo-icpr28-chía-colombia",
+          title: 'ICPR28,Chía, Colombia',
+          description: "ICPR28,Chía, Colombia",
+          section: "Photo",handler: () => {
+              window.location.href = "/photo/2025%EB%85%84%EC%BD%9C%EB%A1%AC%EB%B9%84%EC%95%843/";
             },},{id: "projects-",
           title: '',
           description: "감귤 가격 및 출하량 예측 모델 개발",
