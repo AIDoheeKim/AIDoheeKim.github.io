@@ -69,32 +69,7 @@ ninja.data = [{
       },{id: "news-data-optimization-lab-dolab-officially-opened-on-december-22-2024-we-are-excited-to-begin-our-research-journey-in-data-driven-decision-making-and-optimization-at-changwon-national-university",
           title: '🎉 Data Optimization Lab (DOLab) officially opened on December 22, 2024! We are...',
           description: "",
-          section: "News",},{id: "photo-2023년-대한산업공학회-춘계공동학술대회",
-          title: '2023년 대한산업공학회 춘계공동학술대회',
-          description: "2023년 대한산업공학회 춘계공동학술대회",
-          section: "Photo",handler: () => {
-              window.location.href = "/photo/2023%EB%8C%80%ED%95%9C%EC%82%B0%EC%97%85%EA%B3%B5%ED%95%99%ED%9A%8C%EC%B6%98%EA%B3%84/";
-            },},{id: "photo-심성현교수님결혼식",
-          title: '심성현교수님결혼식',
-          description: "심성현교수님(졸업생) 결혼식",
-          section: "Photo",handler: () => {
-              window.location.href = "/photo/%EC%8B%AC%EC%84%B1%ED%98%84%EA%B5%90%EC%88%98%EB%8B%98%EA%B2%B0%ED%98%BC%EC%8B%9D/";
-            },},{id: "photo-2024홈커밍데이",
-          title: '2024홈커밍데이',
-          description: "2024.03 홈커밍데이",
-          section: "Photo",handler: () => {
-              window.location.href = "/photo/2024%ED%99%88%EC%BB%A4%EB%B0%8D%EB%8D%B0%EC%9D%B4/";
-            },},{id: "photo-2025-상반기-제주도-선도워크숍",
-          title: '2025_상반기_제주도_선도워크숍',
-          description: "2025년 대한산업공학회",
-          section: "Photo",handler: () => {
-              window.location.href = "/photo/2025%EB%85%84%EC%83%81%EB%B0%98%EA%B8%B0%EC%82%B0%EC%97%85%EA%B3%B5%ED%95%99%ED%9A%8C/";
-            },},{id: "photo-icpr28-chía-colombia",
-          title: 'ICPR28,Chía, Colombia',
-          description: "ICPR28,Chía, Colombia",
-          section: "Photo",handler: () => {
-              window.location.href = "/photo/2025%EB%85%84%EC%BD%9C%EB%A1%AC%EB%B9%84%EC%95%843/";
-            },},{id: "projects-",
+          section: "News",},{id: "projects-",
           title: '',
           description: "감귤 가격 및 출하량 예측 모델 개발",
           section: "Projects",},{
