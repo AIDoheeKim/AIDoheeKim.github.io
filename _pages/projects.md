@@ -2,7 +2,7 @@
 layout: page
 title: PROJECTS
 permalink: /projects/
-description: A showcase of DOLab's projects.
+description:
 nav: true
 nav_order: 3
 horizontal: false
