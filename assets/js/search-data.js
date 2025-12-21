@@ -71,7 +71,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-",
           title: '',
-          description: "감귤 가격 및 출하량 예측 모델 개발",
+          description: "프로세스 마이닝을 활용한 고객 사용 패턴 기반 개인화 스마트 운전 로직 개발",
           section: "Projects",},{
         id: 'social-cv',
         title: 'CV',
