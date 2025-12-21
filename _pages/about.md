@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: ABOUT
 permalink: /
 subtitle: Data Optimization Lab, <a href='https://www.changwon.ac.kr/ai/main.do'>Changwon National University</a>
 
