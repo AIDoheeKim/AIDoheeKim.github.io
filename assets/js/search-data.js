@@ -66,8 +66,8 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "news-data-optimization-lab-dolab-officially-opened-on-december-22-2024-we-are-excited-to-begin-our-research-journey-in-data-driven-decision-making-and-optimization-at-changwon-national-university",
-          title: '🎉 Data Optimization Lab (DOLab) officially opened on December 22, 2024! We are...',
+      },{id: "news-data-optimization-lab-dolab-officially-opened-on-december-22-2025-we-are-excited-to-begin-our-research-journey-in-data-driven-decision-making-and-optimization-at-changwon-national-university",
+          title: '🎉 Data Optimization Lab (DOLab) officially opened on December 22, 2025! We are...',
           description: "",
           section: "News",},{id: "projects-",
           title: '',
