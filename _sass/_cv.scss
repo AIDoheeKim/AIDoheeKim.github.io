@@ -174,9 +174,10 @@ ul.timeline li {
 }
 
 span.badge-toc {
-  color: var(--global-bg-color);
-  background-color: var(--global-theme-color);
-  border-radius: 0.125rem;
+  color: #111111;
+  background: linear-gradient(transparent 20%, #d4eeff 20%);
+  background-color: transparent;
+  border-radius: 0;
   padding: 0.125rem 0.5rem 0.125rem 0.5rem;
   font-weight: 700 !important;
   display: inline-block;

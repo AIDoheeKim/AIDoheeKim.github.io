@@ -8,6 +8,14 @@ middle_name:
 last_name: Kim
 contact_note: >
   Feel free to reach me via email at kimdohee@changwon.ac.kr.
+
+# Social links
+email: kimdohee@changwon.ac.kr
+cv_pdf: /assets/pdf/CV_DoheeKim.pdf
+linkedin_username: dohee-kim-99a694305
+scholar_userid: L6k7jvIAAAAJ
+orcid_id: 0000-0002-8153-1422
+researchgate_username: Dohee-Kim-6
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Data Optimization Lab at Changwon National University
 footer_text: >

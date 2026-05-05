@@ -1,4 +1,26 @@
-{% if site.bib_search %}
-  <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
-  <input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter">
-{% endif %}
+<div class="bibsearch">
+  <input type="text" class="bibsearch-form-input" id="bibsearch" placeholder="Type to filter">
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.getElementById("bibsearch");
+  const entries = document.querySelectorAll("ol.bibliography li");
+
+  if (!input) return;
+
+  input.addEventListener("input", function () {
+    const query = input.value.toLowerCase().trim();
+
+    entries.forEach(function (entry) {
+      const text = entry.textContent.toLowerCase();
+
+      if (query === "" || text.includes(query)) {
+        entry.style.display = "";
+      } else {
+        entry.style.display = "none";
+      }
+    });
+  });
+});
+</script>
