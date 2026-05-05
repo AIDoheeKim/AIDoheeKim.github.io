@@ -3,13 +3,20 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "ABOUT",
+    id: "nav-home",
+    title: "HOME",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-home",
+          title: "HOME",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/";
+          },
+        },{id: "nav-publications",
           title: "PUBLICATIONS",
           description: "",
           section: "Navigation",
@@ -43,6 +50,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
+          },
+        },{id: "nav-gallery",
+          title: "GALLERY",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/gallery/";
           },
         },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
