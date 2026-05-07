@@ -33,17 +33,21 @@ nav_order: 8
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+  cursor: pointer;
 }
 
-.gallery-placeholder {
+.gallery-card:hover {
+  transform: translateY(-3px);
+  transition: 0.2s;
+}
+
+.gallery-image {
+  width: 100%;
   height: 210px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   background: #f3f4f6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #9ca3af;
-  font-size: 0.9rem;
-  font-weight: 600;
 }
 
 .gallery-info {
@@ -74,6 +78,139 @@ nav_order: 8
   line-height: 1.5;
 }
 
+.gallery-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.gallery-modal.open {
+  display: flex;
+}
+
+.gallery-modal-box {
+  background: #ffffff;
+  width: min(900px, 95vw);
+  max-height: 90vh;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.gallery-modal-image-wrap {
+  position: relative;
+  background: #f3f4f6;
+  text-align: center;
+}
+
+.gallery-modal-image {
+  max-width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.gallery-arrow.left {
+  left: 14px;
+}
+
+.gallery-arrow.right {
+  right: 14px;
+}
+
+.gallery-count {
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.gallery-modal-info {
+  padding: 1.4rem;
+}
+
+.gallery-modal-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 0.4rem;
+}
+
+.gallery-modal-date {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.gallery-modal-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #059669;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.gallery-thumb {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.gallery-thumb.active {
+  border-color: #1d4ed8;
+}
+
 @media (max-width: 900px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -97,60 +234,120 @@ nav_order: 8
 
 <div class="gallery-grid">
 
-<div class="gallery-card">
-  <div class="gallery-placeholder">Photo Coming Soon</div>
+<div class="gallery-card" onclick="openGallery(0)">
+  <img class="gallery-image" src="/assets/img/gallery/cherry_2026_1.jpg" alt="Cherry Blossom ">
   <div class="gallery-info">
-    <div class="gallery-name">DOLab Workshop</div>
+    <div class="gallery-name">2026 Cherry Blossom </div>
     <div class="gallery-tag">Lab Events</div>
-    <div class="gallery-desc">DOLab research workshop and group activities.</div>
-  </div>
-</div>
-
-<div class="gallery-card">
-  <div class="gallery-placeholder">Photo Coming Soon</div>
-  <div class="gallery-info">
-    <div class="gallery-name">Conference</div>
-    <div class="gallery-tag">Conference</div>
-    <div class="gallery-desc">Attending academic conferences and research presentations.</div>
-  </div>
-</div>
-
-<div class="gallery-card">
-  <div class="gallery-placeholder">Photo Coming Soon</div>
-  <div class="gallery-info">
-    <div class="gallery-name">Lab Meeting</div>
-    <div class="gallery-tag">Lab Events</div>
-    <div class="gallery-desc">Weekly lab meetings and research discussions.</div>
-  </div>
-</div>
-
-<div class="gallery-card">
-  <div class="gallery-placeholder">Photo Coming Soon</div>
-  <div class="gallery-info">
-    <div class="gallery-name">Poster Session</div>
-    <div class="gallery-tag">Research</div>
-    <div class="gallery-desc">Poster presentations and research sharing sessions.</div>
-  </div>
-</div>
-
-<div class="gallery-card">
-  <div class="gallery-placeholder">Photo Coming Soon</div>
-  <div class="gallery-info">
-    <div class="gallery-name">Seminar</div>
-    <div class="gallery-tag">Seminar</div>
-    <div class="gallery-desc">Invited talks, seminars, and academic events.</div>
-  </div>
-</div>
-
-<div class="gallery-card">
-  <div class="gallery-placeholder">Photo Coming Soon</div>
-  <div class="gallery-info">
-    <div class="gallery-name">Group Activity</div>
-    <div class="gallery-tag">Social Events</div>
-    <div class="gallery-desc">DOLab social events and group activities.</div>
+    <div class="gallery-desc">DOLab members enjoyed the cherry blossom  together.</div>
   </div>
 </div>
 
 </div>
 
 </div>
+
+<div class="gallery-modal" id="galleryModal">
+  <div class="gallery-modal-box">
+    <button class="gallery-close" onclick="closeGallery()">×</button>
+
+    <div class="gallery-modal-image-wrap">
+      <button class="gallery-arrow left" onclick="prevImage()">‹</button>
+      <img class="gallery-modal-image" id="modalImage" src="" alt="">
+      <button class="gallery-arrow right" onclick="nextImage()">›</button>
+      <div class="gallery-count" id="imageCount"></div>
+    </div>
+
+    <div class="gallery-modal-info">
+      <div class="gallery-modal-title" id="modalTitle"></div>
+      <div class="gallery-modal-date" id="modalDate"></div>
+
+      <div class="gallery-modal-label">Description</div>
+      <div id="modalDesc"></div>
+
+      <div class="gallery-modal-label">Location</div>
+      <div id="modalLocation"></div>
+
+      <div class="gallery-modal-label">Images</div>
+      <div class="gallery-thumbs" id="modalThumbs"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const galleries = [
+  {
+    title: "2026 Cherry Blossom",
+    date: "Spring 2026",
+    location: "Changwon National University",
+    desc: "DOLab members enjoyed the cherry blossom  together.",
+    images: [
+      "/assets/img/gallery/cherry_2026_1.jpg",
+      "/assets/img/gallery/cherry_2026_2.jpg",
+      "/assets/img/gallery/cherry_2026_3.jpg",
+      "/assets/img/gallery/cherry_2026_4.jpg",
+      "/assets/img/gallery/cherry_2026_5.jpg"
+    ]
+  }
+];
+
+let currentGallery = 0;
+let currentImage = 0;
+
+function openGallery(index) {
+  currentGallery = index;
+  currentImage = 0;
+  document.getElementById("galleryModal").classList.add("open");
+  renderGallery();
+}
+
+function closeGallery() {
+  document.getElementById("galleryModal").classList.remove("open");
+}
+
+function renderGallery() {
+  const gallery = galleries[currentGallery];
+
+  document.getElementById("modalTitle").innerText = gallery.title;
+  document.getElementById("modalDate").innerText = gallery.date;
+  document.getElementById("modalDesc").innerText = gallery.desc;
+  document.getElementById("modalLocation").innerText = gallery.location;
+  document.getElementById("modalImage").src = gallery.images[currentImage];
+  document.getElementById("imageCount").innerText = (currentImage + 1) + " / " + gallery.images.length;
+
+  const thumbs = document.getElementById("modalThumbs");
+  thumbs.innerHTML = "";
+
+  gallery.images.forEach(function (src, i) {
+    const img = document.createElement("img");
+    img.src = src;
+    img.className = "gallery-thumb" + (i === currentImage ? " active" : "");
+    img.onclick = function () {
+      currentImage = i;
+      renderGallery();
+    };
+    thumbs.appendChild(img);
+  });
+}
+
+function nextImage() {
+  const gallery = galleries[currentGallery];
+  currentImage = (currentImage + 1) % gallery.images.length;
+  renderGallery();
+}
+
+function prevImage() {
+  const gallery = galleries[currentGallery];
+  currentImage = (currentImage - 1 + gallery.images.length) % gallery.images.length;
+  renderGallery();
+}
+
+document.addEventListener("keydown", function(e) {
+  const modal = document.getElementById("galleryModal");
+  if (!modal.classList.contains("open")) return;
+
+  if (e.key === "Escape") closeGallery();
+  if (e.key === "ArrowRight") nextImage();
+  if (e.key === "ArrowLeft") prevImage();
+});
+</script>

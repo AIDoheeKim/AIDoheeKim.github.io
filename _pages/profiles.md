@@ -133,7 +133,7 @@ nav_order: 7
   <img class="people-photo" src="/assets/img/hong_jinyoung.jpg" alt="Jinyoung Hong">
   <div class="people-info">
     <div class="people-name">Jinyoung Hong</div>
-    <div class="people-role">M.S. Student</div>
+    <div class="people-role">Intern</div>
     <div class="people-email">hjy010402@changwon.ac.kr</div>
     <div class="people-interest">Data Optimization, AI, Machine Learning</div>
   </div>
@@ -146,7 +146,7 @@ nav_order: 7
 <div class="people-grid">
 
 <div class="people-card">
-  <img class="people-photo" src="/assets/img/moon_kyemongmin.jpg" alt="Kyemongmin Moon">
+  <img class="people-photo" src="/assets/img/moon_kyemongmin.png" alt="Kyemongmin Moon">
   <div class="people-info">
     <div class="people-name">Kyemongmin Moon</div>
     <div class="people-role">Undergraduate Intern</div>

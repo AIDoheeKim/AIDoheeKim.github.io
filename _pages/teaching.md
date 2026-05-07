@@ -7,6 +7,14 @@ nav: true
 nav_order: 6
 ---
 
+**Multimodal AI** (AIB3020)  
+- *Spring 2026, Changwon National University, Graduate*  
+- Instructor – Lecturing, grading, practical sessions, and proctoring.
+
+**Data Structures and Algorithm** (AIA1007)  
+- *Spring 2026, Changwon National University, Undergraduate*  
+- Instructor – Lecturing, grading, practical sessions, and proctoring.
+
 **Shipping & Port Application** (DS9700019)  
 - *Fall 2025, Pusan National University, Graduate*  
 - Instructor – Lecturing, grading, practical sessions, and proctoring.
