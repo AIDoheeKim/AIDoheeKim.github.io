@@ -61,6 +61,17 @@ nav_order: 8
   margin-bottom: 0.5rem;
 }
 
+.gallery-date {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #374151;
+  background: #f3f4f6;
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  margin-bottom: 0.55rem;
+}
+
 .gallery-tag {
   display: inline-block;
   font-size: 0.72rem;
@@ -232,18 +243,7 @@ nav_order: 8
 
 <div class="gallery-title">GALLERY</div>
 
-<div class="gallery-grid">
-
-<div class="gallery-card" onclick="openGallery(0)">
-  <img class="gallery-image" src="/assets/img/gallery/cherry_2026_1.jpg" alt="Cherry Blossom ">
-  <div class="gallery-info">
-    <div class="gallery-name">2026 Cherry Blossom </div>
-    <div class="gallery-tag">Lab Events</div>
-    <div class="gallery-desc">DOLab members enjoyed the cherry blossom  together.</div>
-  </div>
-</div>
-
-</div>
+<div class="gallery-grid" id="galleryGrid"></div>
 
 </div>
 
@@ -278,9 +278,11 @@ nav_order: 8
 const galleries = [
   {
     title: "2026 Cherry Blossom",
-    date: "Spring 2026",
+    date: "April 3, 2026",
+    sortDate: "2026-04-03",
     location: "Changwon National University",
-    desc: "DOLab members enjoyed the cherry blossom  together.",
+    tag: "Lab Events",
+    desc: "DOLab members enjoyed the cherry blossoms together.",
     images: [
       "/assets/img/gallery/cherry_2026_1.jpg",
       "/assets/img/gallery/cherry_2026_2.jpg",
@@ -290,6 +292,33 @@ const galleries = [
     ]
   }
 ];
+
+galleries.sort(function(a, b) {
+  return new Date(b.sortDate) - new Date(a.sortDate);
+});
+
+const galleryGrid = document.getElementById("galleryGrid");
+
+galleries.forEach(function(gallery, index) {
+  const card = document.createElement("div");
+  card.className = "gallery-card";
+  card.onclick = function() {
+    openGallery(index);
+  };
+
+  card.innerHTML = `
+    <img class="gallery-image" src="${gallery.images[0]}" alt="${gallery.title}">
+    <div class="gallery-info">
+      <div class="gallery-name">${gallery.title}</div>
+      <div class="gallery-date">${gallery.date}</div>
+      <br>
+      <div class="gallery-tag">${gallery.tag}</div>
+      <div class="gallery-desc">${gallery.desc}</div>
+    </div>
+  `;
+
+  galleryGrid.appendChild(card);
+});
 
 let currentGallery = 0;
 let currentImage = 0;
