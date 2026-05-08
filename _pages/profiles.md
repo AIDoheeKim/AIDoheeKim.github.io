@@ -50,6 +50,7 @@ nav_order: 7
   object-fit: cover;
   object-position: center top;
   background: #ffffff;
+  display: block;
 }
 
 .people-info {
