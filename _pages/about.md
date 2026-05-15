@@ -142,6 +142,17 @@ body {
   color: #444444;
 }
 
+.about-section {
+  max-width: 880px;
+}
+
+.about-section p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #444444;
+  margin: 0 0 14px 0;
+}
+
 /* Research Grid */
 .research-grid {
   display: grid;
@@ -278,11 +289,13 @@ body {
   </div>
 </div>
 
-<div class="dolab-section">
+<div class="dolab-section about-section">
   <h2 class="highlight-blue">About</h2>
   <p>
     DOLab develops data-driven optimization methodologies to solve complex real-world problems.
-    We aim to bridge theoretical foundations and practical applications by combining
+  </p>
+  <p>
+    We bridge theoretical foundations and practical applications by combining
     mathematical modeling with data-centric AI approaches.
   </p>
 </div>

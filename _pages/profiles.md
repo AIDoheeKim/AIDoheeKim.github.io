@@ -140,6 +140,16 @@ nav_order: 7
   </div>
 </div>
 
+<div class="people-card">
+  <img class="people-photo" src="/assets/img/park_jaehyeon.jpg" alt="Jaehyeon Park">
+  <div class="people-info">
+    <div class="people-name">Jaehyeon Park</div>
+    <div class="people-role">Intern</div>
+    <div class="people-email">parkjaehyeon1112@gmail.com</div>
+    <div class="people-interest">AI, Data Science, Machine Learning</div>
+  </div>
+</div>
+
 </div>
 
 <div class="people-section-title">Undergraduate</div>

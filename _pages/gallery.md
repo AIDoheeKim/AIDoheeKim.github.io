@@ -277,6 +277,18 @@ nav_order: 8
 <script>
 const galleries = [
   {
+    title: "2026 Teacher's Day",
+    date: "May 15, 2026",
+    sortDate: "2026-05-15",
+    location: "Changwon National University",
+    tag: "Lab Events",
+    desc: "교수님 항상 감사합니다.",
+    images: [
+      "/assets/img/gallery/teachersday_2026_1.jpg",
+      "/assets/img/gallery/teachersday_2026_2.jpg"
+    ]
+  },
+  {
     title: "2026 Cherry Blossom",
     date: "April 3, 2026",
     sortDate: "2026-04-03",
