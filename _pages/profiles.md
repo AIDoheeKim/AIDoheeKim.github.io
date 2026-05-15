@@ -88,6 +88,39 @@ nav_order: 7
   color: #333;
 }
 
+/* Dark mode fix */
+html[data-theme="dark"] .people-card,
+html[data-theme="dark"] .people-card.professor {
+  background: #ffffff !important;
+  border-color: #e5e7eb !important;
+}
+
+html[data-theme="dark"] .people-photo {
+  background: #ffffff !important;
+}
+
+html[data-theme="dark"] .people-name {
+  color: #111827 !important;
+}
+
+html[data-theme="dark"] .people-role {
+  color: #003478 !important;
+}
+
+html[data-theme="dark"] .people-email {
+  color: #6b7280 !important;
+}
+
+html[data-theme="dark"] .people-interest {
+  color: #333333 !important;
+  border-top-color: #e5e7eb !important;
+}
+
+html[data-theme="dark"] .people-section-title {
+  color: #7dd3fc !important;
+  border-bottom-color: #4b5563 !important;
+}
+
 @media (max-width: 900px) {
   .people-grid {
     grid-template-columns: 1fr;
@@ -185,6 +218,7 @@ nav_order: 7
     <div class="people-interest">AI, Data Science, Machine Learning</div>
   </div>
 </div>
+
 
 <div class="people-card">
   <img class="people-photo" src="/assets/img/kim_hyebin.jpg" alt="Hyebin Kim">
