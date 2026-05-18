@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-13'
+  last_updated: '2026-05-18'
 papers:
   L6k7jvIAAAAJ:1sJd4Hv_s6UC:
     citations: 2
@@ -30,7 +30,7 @@ papers:
     title: "\uC0C1\uD0DC\uAE30\uBC18 \uC815\uBE44\uB97C \uC704\uD55C \uCD08\uAE30 \uC131\uB2A5\uC800\uD558 \uC2DC\uC810 (First Prediction Time, FPT) \uCD94\uC815 \uC5F0\uAD6C"
     year: '2024'
   L6k7jvIAAAAJ:4TOpqqG69KYC:
-    citations: 10
+    citations: 11
     title: Outlier detection and labeling of ship main engine using LSTM-AutoEncoder
     year: '2022'
   L6k7jvIAAAAJ:70eg2SAEIzsC:
@@ -74,7 +74,7 @@ papers:
     title: Container volume prediction using time-series decomposition with a long short-term memory models
     year: '2021'
   L6k7jvIAAAAJ:KxtntwgDAa4C:
-    citations: 3
+    citations: 4
     title: Deep learning framework for regional maritime collision risk assessment using CNN and Grad-CAM
     year: '2026'
   L6k7jvIAAAAJ:LkGwnXOMwfcC:
@@ -86,7 +86,7 @@ papers:
     title: "\uCEE8\uD14C\uC774\uB108 \uC6B4\uC784 \uC9C0\uC218 \uC608\uCE21 \uC694\uC778 \uC5F0\uAD6C: \uCF54\uB85C\uB098 19 \uC774\uC804\uACFC \uC774\uD6C4 \uBE44\uAD50"
     year: '2022'
   L6k7jvIAAAAJ:M3ejUd6NZC8C:
-    citations: 7
+    citations: 8
     title: A novel training mechanism for health indicator construction and remaining useful lifetime (RUL) prediction
     year: '2023'
   L6k7jvIAAAAJ:MXK_kJrjxJIC:
@@ -141,6 +141,10 @@ papers:
     citations: 21
     title: Method of predictive maintenance for induction furnace based on neural network
     year: '2020'
+  L6k7jvIAAAAJ:WbkHhVStYXYC:
+    citations: 0
+    title: 'LoopUS: Recasting Pretrained LLMs into Looped Latent Refinement Models'
+    year: '2026'
   L6k7jvIAAAAJ:Wp0gIr-vW9MC:
     citations: 2
     title: Improving time-series classification accuracy based on temporal feature representation learning using CRU-LSTM autoencoder
@@ -154,7 +158,7 @@ papers:
     title: Estimating container dwell time and forecasting port congestion using bayesian network
     year: '2024'
   L6k7jvIAAAAJ:YOwf2qJgpHMC:
-    citations: 17
+    citations: 20
     title: 'Correlation recurrent units: A novel neural architecture for improving the predictive performance of time-series data'
     year: '2023'
   L6k7jvIAAAAJ:YsMSGLbcyi4C:
@@ -198,11 +202,11 @@ papers:
     title: "\uD654\uBB3C\uC758 \uD2B9\uC131 \uBC0F \uC801\uC7AC \uACF5\uAC04\uC744 \uACE0\uB824\uD55C LCL \uD654\uBB3C \uC801\uC7AC \uC54C\uACE0\uB9AC\uC998"
     year: '2023'
   L6k7jvIAAAAJ:dshw04ExmUIC:
-    citations: 1
+    citations: 3
     title: Method and apparatus for predicting recipe property reflecting similarity between chemical materials
     year: '2024'
   L6k7jvIAAAAJ:f2IySw72cVMC:
-    citations: 5
+    citations: 7
     title: "Long\u2010term forecasting of maritime economics index using time\u2010series decomposition and two\u2010stage attention"
     year: '2025'
   L6k7jvIAAAAJ:fPk4N6BV_jEC:
@@ -234,7 +238,7 @@ papers:
     title: "\uC13C\uC11C \uB370\uC774\uD130\uC758 \uC2DC\uACC4\uC5F4 \uD2B9\uC131\uC744 \uACE0\uB824\uD55C \uC120\uBC15 \uC5F0\uB8CC \uC18C\uBAA8\uB7C9 \uC608\uCE21 \uD504\uB808\uC784\uC6CC\uD06C"
     year: '2025'
   L6k7jvIAAAAJ:ns9cj8rnVeAC:
-    citations: 0
+    citations: 1
     title: Continual Learning Approach With Adaptive Memory Mechanism for Predictive Process Monitoring in Dynamic Business Environments
     year: '2025'
   L6k7jvIAAAAJ:p2g8aNsByqUC:
