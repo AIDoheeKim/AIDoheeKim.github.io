@@ -138,7 +138,16 @@ html[data-theme="dark"] .people-section-title {
 
   .people-photo {
     width: 100%;
-    height: 240px;
+    min-width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: contain;
+    object-position: center top;
+    background: #ffffff;
+  }
+
+  .people-info {
+    padding: 1.1rem;
   }
 }
 </style>
@@ -218,7 +227,6 @@ html[data-theme="dark"] .people-section-title {
     <div class="people-interest">AI, Data Science, Machine Learning</div>
   </div>
 </div>
-
 
 <div class="people-card">
   <img class="people-photo" src="/assets/img/kim_hyebin.jpg" alt="Hyebin Kim">
