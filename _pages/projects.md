@@ -8,6 +8,36 @@ nav_order: 3
 horizontal: false
 ---
 
+<style>
+@media (max-width: 640px) {
+  .projects table {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .projects th[scope="col"]:first-child,
+  .projects th[scope="row"] {
+    width: 34% !important;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    word-break: keep-all;
+    white-space: normal;
+  }
+
+  .projects td {
+    width: 66% !important;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+}
+</style>
+
 <div class="projects">
   {% assign projects = site.projects | where: "category", "projects" %}
   {% assign sorted_projects = projects | sort: "start_date" | reverse %}
@@ -39,9 +69,9 @@ horizontal: false
 
     <tr>
       <th scope="row" style="width: 15%">
-        {{ project.start_date | date: '%b, %Y' }}
+        {{ project.start_date | date: '%Y.%m' }}
         {% if project.end_date %}
-          ~ {{ project.end_date | date: '%b, %Y' }}
+          ~ {{ project.end_date | date: '%Y.%m' }}
         {% endif %}
       </th>
       <td>
