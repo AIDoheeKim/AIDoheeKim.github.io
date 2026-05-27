@@ -139,9 +139,8 @@ html[data-theme="dark"] .people-section-title {
   .people-photo {
     width: 100%;
     min-width: 100%;
-    height: auto;
-    max-height: 360px;
-    object-fit: contain;
+    height: 520px;
+    object-fit: cover;
     object-position: center top;
     background: #ffffff;
   }
