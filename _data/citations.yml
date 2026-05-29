@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-05-18'
+  last_updated: '2026-05-29'
 papers:
   L6k7jvIAAAAJ:1sJd4Hv_s6UC:
-    citations: 2
+    citations: 3
     title: Multi-task Trained Graph Neural Network for Business Process Anomaly Detection with a Limited Number of Labeled Anomalies
     year: '2025'
   L6k7jvIAAAAJ:2P1L_qKh6hAC:
@@ -58,7 +58,7 @@ papers:
     title: "2024 IEEE 6th International Conference on Cognitive Machine Intelligence (CogMI)| 979-8-3503-8672-1/24/$31.00\xA9 2024 IEEE| DOI: 10.1109/CogMI62246. 2024.00046"
     year: Unknown Year
   L6k7jvIAAAAJ:GnPB-g6toBAC:
-    citations: 14
+    citations: 15
     title: 'Artificial intelligence-based smart port logistics metaverse for enhancing productivity, environment, and safety in port logistics: A case study of Busan Port'
     year: '2024'
   L6k7jvIAAAAJ:HDshCWvjkbEC:
