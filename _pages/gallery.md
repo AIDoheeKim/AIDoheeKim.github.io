@@ -283,7 +283,7 @@ const galleries = [
     sortDate: "2026-04-03",
     location: "Changwon National University",
     tag: "Lab Events",
-    desc: "DOLab members enjoyed the cherry blossoms together.",
+    desc: "DOLab’s first seminar and cherry blossom.",
     images: [
       "/assets/img/gallery/cherry_2026_1.jpg",
       "/assets/img/gallery/cherry_2026_2.jpg",
