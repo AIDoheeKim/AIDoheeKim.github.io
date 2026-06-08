@@ -157,13 +157,8 @@ nav_order: 8
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 
-.gallery-arrow.left {
-  left: 14px;
-}
-
-.gallery-arrow.right {
-  right: 14px;
-}
+.gallery-arrow.left { left: 14px; }
+.gallery-arrow.right { right: 14px; }
 
 .gallery-count {
   position: absolute;
@@ -223,19 +218,12 @@ nav_order: 8
 }
 
 @media (max-width: 900px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 640px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-title {
-    font-size: 1.8rem;
-  }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-title { font-size: 1.8rem; }
 }
 </style>
 
@@ -247,13 +235,14 @@ nav_order: 8
 
 </div>
 
+<!-- MODAL -->
 <div class="gallery-modal" id="galleryModal">
   <div class="gallery-modal-box">
     <button class="gallery-close" onclick="closeGallery()">×</button>
 
     <div class="gallery-modal-image-wrap">
       <button class="gallery-arrow left" onclick="prevImage()">‹</button>
-      <img class="gallery-modal-image" id="modalImage" src="" alt="">
+      <img class="gallery-modal-image" id="modalImage">
       <button class="gallery-arrow right" onclick="nextImage()">›</button>
       <div class="gallery-count" id="imageCount"></div>
     </div>
@@ -302,41 +291,55 @@ const galleries = [
       "/assets/img/gallery/cherry_2026_4.jpg",
       "/assets/img/gallery/cherry_2026_5.jpg"
     ]
+  },
+
+  {
+    title: "2026 Spring Joint Conference (Industrial Engineering)",
+    date: "June 4, 2026",
+    sortDate: "2026-06-04",
+    location: "Gyeongju HICO",
+    tag: "Conference",
+    desc: "산업공학회 춘계공동학술대회 참가 및 발표.",
+    images: [
+      "/assets/img/gallery/ie_spring_2026_1.jpg",
+      "/assets/img/gallery/ie_spring_2026_2.jpg",
+      "/assets/img/gallery/ie_spring_2026_3.jpg",
+      "/assets/img/gallery/ie_spring_2026_4.jpg"
+    ]
   }
 ];
 
-galleries.sort(function(a, b) {
-  return new Date(b.sortDate) - new Date(a.sortDate);
-});
+galleries.sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));
 
-const galleryGrid = document.getElementById("galleryGrid");
-
-galleries.forEach(function(gallery, index) {
-  const card = document.createElement("div");
-  card.className = "gallery-card";
-  card.onclick = function() {
-    openGallery(index);
-  };
-
-  card.innerHTML = `
-    <img class="gallery-image" src="${gallery.images[0]}" alt="${gallery.title}">
-    <div class="gallery-info">
-      <div class="gallery-name">${gallery.title}</div>
-      <div class="gallery-date">${gallery.date}</div>
-      <br>
-      <div class="gallery-tag">${gallery.tag}</div>
-      <div class="gallery-desc">${gallery.desc}</div>
-    </div>
-  `;
-
-  galleryGrid.appendChild(card);
-});
+const grid = document.getElementById("galleryGrid");
 
 let currentGallery = 0;
 let currentImage = 0;
 
-function openGallery(index) {
-  currentGallery = index;
+function renderGrid() {
+  grid.innerHTML = "";
+
+  galleries.forEach((g, i) => {
+    const card = document.createElement("div");
+    card.className = "gallery-card";
+    card.onclick = () => openGallery(i);
+
+    card.innerHTML = `
+      <img class="gallery-image" src="${g.images[0]}">
+      <div class="gallery-info">
+        <div class="gallery-name">${g.title}</div>
+        <div class="gallery-date">${g.date}</div>
+        <div class="gallery-tag">${g.tag}</div>
+        <div class="gallery-desc">${g.desc}</div>
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
+}
+
+function openGallery(i) {
+  currentGallery = i;
   currentImage = 0;
   document.getElementById("galleryModal").classList.add("open");
   renderGallery();
@@ -347,23 +350,25 @@ function closeGallery() {
 }
 
 function renderGallery() {
-  const gallery = galleries[currentGallery];
+  const g = galleries[currentGallery];
 
-  document.getElementById("modalTitle").innerText = gallery.title;
-  document.getElementById("modalDate").innerText = gallery.date;
-  document.getElementById("modalDesc").innerText = gallery.desc;
-  document.getElementById("modalLocation").innerText = gallery.location;
-  document.getElementById("modalImage").src = gallery.images[currentImage];
-  document.getElementById("imageCount").innerText = (currentImage + 1) + " / " + gallery.images.length;
+  document.getElementById("modalTitle").innerText = g.title;
+  document.getElementById("modalDate").innerText = g.date;
+  document.getElementById("modalDesc").innerText = g.desc;
+  document.getElementById("modalLocation").innerText = g.location;
+
+  document.getElementById("modalImage").src = g.images[currentImage];
+  document.getElementById("imageCount").innerText =
+    (currentImage + 1) + " / " + g.images.length;
 
   const thumbs = document.getElementById("modalThumbs");
   thumbs.innerHTML = "";
 
-  gallery.images.forEach(function (src, i) {
+  g.images.forEach((src, i) => {
     const img = document.createElement("img");
     img.src = src;
     img.className = "gallery-thumb" + (i === currentImage ? " active" : "");
-    img.onclick = function () {
+    img.onclick = () => {
       currentImage = i;
       renderGallery();
     };
@@ -372,18 +377,18 @@ function renderGallery() {
 }
 
 function nextImage() {
-  const gallery = galleries[currentGallery];
-  currentImage = (currentImage + 1) % gallery.images.length;
+  const g = galleries[currentGallery];
+  currentImage = (currentImage + 1) % g.images.length;
   renderGallery();
 }
 
 function prevImage() {
-  const gallery = galleries[currentGallery];
-  currentImage = (currentImage - 1 + gallery.images.length) % gallery.images.length;
+  const g = galleries[currentGallery];
+  currentImage = (currentImage - 1 + g.images.length) % g.images.length;
   renderGallery();
 }
 
-document.addEventListener("keydown", function(e) {
+document.addEventListener("keydown", (e) => {
   const modal = document.getElementById("galleryModal");
   if (!modal.classList.contains("open")) return;
 
@@ -391,4 +396,6 @@ document.addEventListener("keydown", function(e) {
   if (e.key === "ArrowRight") nextImage();
   if (e.key === "ArrowLeft") prevImage();
 });
+
+renderGrid();
 </script>
