@@ -228,14 +228,10 @@ nav_order: 8
 </style>
 
 <div class="gallery-wrap">
-
-<div class="gallery-title">GALLERY</div>
-
-<div class="gallery-grid" id="galleryGrid"></div>
-
+  <div class="gallery-title">GALLERY</div>
+  <div class="gallery-grid" id="galleryGrid"></div>
 </div>
 
-<!-- MODAL -->
 <div class="gallery-modal" id="galleryModal">
   <div class="gallery-modal-box">
     <button class="gallery-close" onclick="closeGallery()">×</button>
@@ -266,6 +262,34 @@ nav_order: 8
 <script>
 const galleries = [
   {
+    title: "Visit from LG Electronics Executives",
+    date: "June 12, 2026",
+    sortDate: "2026-06-12",
+    location: "Changwon National University",
+    tag: "Lab Events",
+    desc: "Executives from LG Electronics visited DOLab to learn about our ongoing research projects and discuss potential future collaborations.",
+    images: [
+      "/assets/img/gallery/lg.jpg",
+      "/assets/img/gallery/lg1.jpg",
+      "/assets/img/gallery/lg2.jpg",
+      "/assets/img/gallery/lg3.jpg"
+    ]
+  },
+  {
+    title: "2026 Spring Joint Conference (Industrial Engineering)",
+    date: "June 4, 2026",
+    sortDate: "2026-06-04",
+    location: "Gyeongju HICO",
+    tag: "Conference",
+    desc: "산업공학회 춘계공동학술대회 참가 및 발표.",
+    images: [
+      "/assets/img/gallery/ie_spring_2026_1.jpg",
+      "/assets/img/gallery/ie_spring_2026_2.jpg",
+      "/assets/img/gallery/ie_spring_2026_3.jpg",
+      "/assets/img/gallery/ie_spring_2026_4.jpg"
+    ]
+  },
+  {
     title: "2026 Teacher's Day",
     date: "May 15, 2026",
     sortDate: "2026-05-15",
@@ -290,21 +314,6 @@ const galleries = [
       "/assets/img/gallery/cherry_2026_3.jpg",
       "/assets/img/gallery/cherry_2026_4.jpg",
       "/assets/img/gallery/cherry_2026_5.jpg"
-    ]
-  },
-
-  {
-    title: "2026 Spring Joint Conference (Industrial Engineering)",
-    date: "June 4, 2026",
-    sortDate: "2026-06-04",
-    location: "Gyeongju HICO",
-    tag: "Conference",
-    desc: "산업공학회 춘계공동학술대회 참가 및 발표.",
-    images: [
-      "/assets/img/gallery/ie_spring_2026_1.jpg",
-      "/assets/img/gallery/ie_spring_2026_2.jpg",
-      "/assets/img/gallery/ie_spring_2026_3.jpg",
-      "/assets/img/gallery/ie_spring_2026_4.jpg"
     ]
   }
 ];
@@ -356,10 +365,8 @@ function renderGallery() {
   document.getElementById("modalDate").innerText = g.date;
   document.getElementById("modalDesc").innerText = g.desc;
   document.getElementById("modalLocation").innerText = g.location;
-
   document.getElementById("modalImage").src = g.images[currentImage];
-  document.getElementById("imageCount").innerText =
-    (currentImage + 1) + " / " + g.images.length;
+  document.getElementById("imageCount").innerText = (currentImage + 1) + " / " + g.images.length;
 
   const thumbs = document.getElementById("modalThumbs");
   thumbs.innerHTML = "";
