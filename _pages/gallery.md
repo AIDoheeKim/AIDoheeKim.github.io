@@ -1,4 +1,4 @@
---desc-
+---
 layout: page
 permalink: /gallery/
 title: GALLERY
@@ -262,20 +262,19 @@ nav_order: 8
 <script>
 const galleries = [
   {
-    title: "LG Electronics Executive Visit",
-    date: "June 12, 2026",
-    sortDate: "2026-06-12",
-    location: "Changwon National University",
-    tag: "Lab Events",
-    desc: "LG Electronics executives visited DOLab and were introduced to our research activities and ongoing projects.",
-    
-    images: [
-      "/assets/img/gallery/lg.jpg",
-      "/assets/img/gallery/lg1.jpg",
-      "/assets/img/gallery/lg2.jpg",
-      "/assets/img/gallery/lg3.jpg"
-    ]
-  },
+  title: "LG Electronics Executive Visit",
+  date: "June 12, 2026",
+  sortDate: "2026-06-12",
+  location: "Changwon National University",
+  tag: "Lab Events",
+  desc: "LG Electronics executives visited DOLab and were introduced to our research activities and ongoing projects.",
+  images: [
+    "/assets/img/gallery/lg.jpg",
+    "/assets/img/gallery/lg1.jpg",
+    "/assets/img/gallery/lg2.jpg",
+    "/assets/img/gallery/lg3.jpg"
+  ]
+},
   {
     title: "2026 Spring Joint Conference (Industrial Engineering)",
     date: "June 4, 2026",
