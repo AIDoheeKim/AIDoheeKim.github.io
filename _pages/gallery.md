@@ -1,4 +1,4 @@
----
+--desc-
 layout: page
 permalink: /gallery/
 title: GALLERY
@@ -268,7 +268,7 @@ const galleries = [
     location: "Changwon National University",
     tag: "Lab Events",
     desc: "LG Electronics executives visited DOLab and were introduced to our research activities and ongoing projects.",
-",
+    
     images: [
       "/assets/img/gallery/lg.jpg",
       "/assets/img/gallery/lg1.jpg",
