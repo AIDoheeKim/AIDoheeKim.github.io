@@ -267,7 +267,7 @@ const galleries = [
     sortDate: "2026-06-12",
     location: "Changwon National University",
     tag: "Lab Events",
-    desc: "LG Electronics executives visited DOLab and were introduced to our research activities and ongoing projects.
+    desc: "LG Electronics executives visited DOLab and were introduced to our research activities and ongoing projects.",
 ",
     images: [
       "/assets/img/gallery/lg.jpg",
