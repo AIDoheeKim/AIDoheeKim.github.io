@@ -145,7 +145,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .navbar {
-  box-shadow: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
@@ -174,9 +174,19 @@ ul.task-list input[type="checkbox"] {
 
 .navbar.navbar-light {
   a:hover { text-decoration: none; }
-  .navbar-brand { color: var(--global-text-color); }
+  .navbar-brand {
+    color: var(--global-text-color);
+    &.title {
+      font-size: 1.45rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    font-weight: 500;
     &:hover { color: var(--global-hover-color); }
   }
   .navbar-nav .nav-item.active > .nav-link {
@@ -747,4 +757,3 @@ mjx-container[jax="CHTML"][display="true"] {
   -webkit-text-fill-color: #111111 !important;
   box-shadow: none !important;
 }
-

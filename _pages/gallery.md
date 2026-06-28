@@ -5,6 +5,54 @@ title: GALLERY
 description:
 nav: true
 nav_order: 8
+galleries:
+  - slug: lg-electronics-executive-visit
+    title: LG Electronics Executive Visit
+    date: June 12, 2026
+    sortDate: 2026-06-12
+    location: Changwon National University
+    tag: Lab Events
+    desc: LG Electronics executives visited DOLab and were introduced to our research activities and ongoing projects.
+    images:
+      - /assets/img/gallery/lg.jpg
+      - /assets/img/gallery/lg1.jpg
+      - /assets/img/gallery/lg2.jpg
+      - /assets/img/gallery/lg3.jpg
+  - slug: 2026-spring-joint-conference-industrial-engineering
+    title: 2026 Spring Joint Conference (Industrial Engineering)
+    date: June 4, 2026
+    sortDate: 2026-06-04
+    location: Gyeongju HICO
+    tag: Conference
+    desc: 산업공학회 춘계공동학술대회 참가 및 발표.
+    images:
+      - /assets/img/gallery/ie_spring_2026_1.jpg
+      - /assets/img/gallery/ie_spring_2026_2.jpg
+      - /assets/img/gallery/ie_spring_2026_3.jpg
+      - /assets/img/gallery/ie_spring_2026_4.jpg
+  - slug: 2026-teachers-day
+    title: 2026 Teacher's Day
+    date: May 15, 2026
+    sortDate: 2026-05-15
+    location: Changwon National University
+    tag: Lab Events
+    desc: 김도희교수님 항상 감사합니다!
+    images:
+      - /assets/img/gallery/teachersday_2026_1.jpg
+      - /assets/img/gallery/teachersday_2026_2.jpg
+  - slug: 2026-cherry-blossom
+    title: 2026 Cherry Blossom
+    date: April 3, 2026
+    sortDate: 2026-04-03
+    location: Changwon National University
+    tag: Lab Events
+    desc: DOLab's first seminar and cherry blossom.
+    images:
+      - /assets/img/gallery/cherry_2026_1.jpg
+      - /assets/img/gallery/cherry_2026_2.jpg
+      - /assets/img/gallery/cherry_2026_3.jpg
+      - /assets/img/gallery/cherry_2026_4.jpg
+      - /assets/img/gallery/cherry_2026_5.jpg
 ---
 
 <style>
@@ -260,63 +308,7 @@ nav_order: 8
 </div>
 
 <script>
-const galleries = [
-  {
-  title: "LG Electronics Executive Visit",
-  date: "June 12, 2026",
-  sortDate: "2026-06-12",
-  location: "Changwon National University",
-  tag: "Lab Events",
-  desc: "LG Electronics executives visited DOLab and were introduced to our research activities and ongoing projects.",
-  images: [
-    "/assets/img/gallery/lg.jpg",
-    "/assets/img/gallery/lg1.jpg",
-    "/assets/img/gallery/lg2.jpg",
-    "/assets/img/gallery/lg3.jpg"
-  ]
-},
-  {
-    title: "2026 Spring Joint Conference (Industrial Engineering)",
-    date: "June 4, 2026",
-    sortDate: "2026-06-04",
-    location: "Gyeongju HICO",
-    tag: "Conference",
-    desc: "산업공학회 춘계공동학술대회 참가 및 발표.",
-    images: [
-      "/assets/img/gallery/ie_spring_2026_1.jpg",
-      "/assets/img/gallery/ie_spring_2026_2.jpg",
-      "/assets/img/gallery/ie_spring_2026_3.jpg",
-      "/assets/img/gallery/ie_spring_2026_4.jpg"
-    ]
-  },
-  {
-    title: "2026 Teacher's Day",
-    date: "May 15, 2026",
-    sortDate: "2026-05-15",
-    location: "Changwon National University",
-    tag: "Lab Events",
-    desc: "김도희교수님 항상 감사합니다!",
-    images: [
-      "/assets/img/gallery/teachersday_2026_1.jpg",
-      "/assets/img/gallery/teachersday_2026_2.jpg"
-    ]
-  },
-  {
-    title: "2026 Cherry Blossom",
-    date: "April 3, 2026",
-    sortDate: "2026-04-03",
-    location: "Changwon National University",
-    tag: "Lab Events",
-    desc: "DOLab’s first seminar and cherry blossom.",
-    images: [
-      "/assets/img/gallery/cherry_2026_1.jpg",
-      "/assets/img/gallery/cherry_2026_2.jpg",
-      "/assets/img/gallery/cherry_2026_3.jpg",
-      "/assets/img/gallery/cherry_2026_4.jpg",
-      "/assets/img/gallery/cherry_2026_5.jpg"
-    ]
-  }
-];
+const galleries = {{ page.galleries | jsonify }};
 
 galleries.sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));
 
@@ -334,7 +326,7 @@ function renderGrid() {
     card.onclick = () => openGallery(i);
 
     card.innerHTML = `
-      <img class="gallery-image" src="${g.images[0]}">
+      <img class="gallery-image" src="${g.images[0]}" alt="${g.title}">
       <div class="gallery-info">
         <div class="gallery-name">${g.title}</div>
         <div class="gallery-date">${g.date}</div>
@@ -350,11 +342,17 @@ function renderGrid() {
 function openGallery(i) {
   currentGallery = i;
   currentImage = 0;
+  const url = new URL(window.location);
+  url.searchParams.set("gallery", galleries[i].slug);
+  window.history.replaceState({}, "", url);
   document.getElementById("galleryModal").classList.add("open");
   renderGallery();
 }
 
 function closeGallery() {
+  const url = new URL(window.location);
+  url.searchParams.delete("gallery");
+  window.history.replaceState({}, "", url);
   document.getElementById("galleryModal").classList.remove("open");
 }
 
@@ -405,4 +403,10 @@ document.addEventListener("keydown", (e) => {
 });
 
 renderGrid();
+
+const initialGallery = new URLSearchParams(window.location.search).get("gallery");
+if (initialGallery) {
+  const initialIndex = galleries.findIndex((g) => g.slug === initialGallery);
+  if (initialIndex >= 0) openGallery(initialIndex);
+}
 </script>

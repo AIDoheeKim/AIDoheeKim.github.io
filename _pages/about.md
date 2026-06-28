@@ -16,25 +16,51 @@ header.post-header h1,
 }
 
 body {
-  background-color: #ffffff !important;
+  background-color: var(--global-bg-color) !important;
 }
 
 .post, .page-content, main {
-  background-color: #ffffff !important;
+  background-color: var(--global-bg-color) !important;
 }
 
 .navbar .nav-link {
-  color: #333333 !important;
   font-weight: 500;
 }
 
-.navbar .nav-link:hover {
-  color: #000000 !important;
+:root {
+  --dolab-muted-text-color: #555555;
+  --dolab-subtle-text-color: #666666;
+  --dolab-date-text-color: #999999;
+  --dolab-surface-color: #fafafa;
+  --dolab-soft-surface-color: #f7f9fc;
+  --dolab-soft-border-color: #e8e8e8;
+  --dolab-hiring-border-color: #e0e8f0;
+  --dolab-heading-shadow-color: #111111;
+  --dolab-highlight-blue: #d4eeff;
+  --dolab-highlight-green: #bff7df;
+  --dolab-highlight-orange: #ffe2a8;
+  --dolab-highlight-pink: #ffd6e7;
+  --dolab-social-cv-bg: #111111;
+  --dolab-social-cv-text: #ffffff;
+  --dolab-logo-filter: none;
 }
 
-.navbar .nav-item.active .nav-link {
-  color: #000000 !important;
-  font-weight: 700;
+html[data-theme="dark"] {
+  --dolab-muted-text-color: #d0d0d0;
+  --dolab-subtle-text-color: #b8b8b8;
+  --dolab-date-text-color: #9c9c9c;
+  --dolab-surface-color: var(--global-card-bg-color);
+  --dolab-soft-surface-color: #20242a;
+  --dolab-soft-border-color: var(--global-divider-color);
+  --dolab-hiring-border-color: var(--global-divider-color);
+  --dolab-heading-shadow-color: var(--global-text-color);
+  --dolab-highlight-blue: #123247;
+  --dolab-highlight-green: #173d2c;
+  --dolab-highlight-orange: #49330f;
+  --dolab-highlight-pink: #4a2134;
+  --dolab-social-cv-bg: #f0f0f0;
+  --dolab-social-cv-text: #111111;
+  --dolab-logo-filter: invert(1) hue-rotate(180deg) saturate(1.15);
 }
 
 /* Hero */
@@ -44,7 +70,7 @@ body {
   justify-content: space-between;
   gap: 60px;
   padding: 100px 0 80px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid var(--global-divider-color);
   margin-bottom: 80px;
 }
 
@@ -55,7 +81,7 @@ body {
 .hero-left h1 {
   font-size: 42px;
   font-weight: 800;
-  color: #111111;
+  color: var(--global-text-color);
   line-height: 1.2;
   margin: 0 0 12px 0;
   background: none !important;
@@ -65,14 +91,14 @@ body {
 .hero-left .hero-univ {
   font-size: 22px;
   font-weight: 600;
-  color: #888888;
+  color: var(--global-text-color-light);
   margin: 0 0 24px 0;
   line-height: 1.25;
 }
 
 .hero-left .hero-univ span {
   display: block;
-  color: #888888 !important;
+  color: var(--global-text-color-light) !important;
 }
 
 .hero-left .hero-univ .univ-indent {
@@ -81,7 +107,7 @@ body {
 
 .hero-left .hero-tagline {
   font-size: 16px;
-  color: #555555;
+  color: var(--dolab-muted-text-color);
   line-height: 1.7;
   margin: 0;
 }
@@ -97,6 +123,7 @@ body {
   width: 100%;
   height: auto;
   border-radius: 16px;
+  filter: var(--dolab-logo-filter);
 }
 
 /* Section */
@@ -109,9 +136,9 @@ body {
   font-size: 30px;
   font-family: 'Paperozi_SemiBold', sans-serif !important;
   font-weight: 900 !important;
-  letter-spacing: -1px;
-  color: #111111;
-  text-shadow: 0.5px 0 #111111, -0.2px 0 #111111;
+  letter-spacing: 0;
+  color: var(--global-text-color);
+  text-shadow: 0.5px 0 var(--dolab-heading-shadow-color), -0.2px 0 var(--dolab-heading-shadow-color);
   margin-bottom: 24px;
   padding: 3px 9px 5px;
   border-bottom: none;
@@ -121,25 +148,25 @@ body {
 }
 
 .highlight-blue {
-  background: #d4eeff;
+  background: var(--dolab-highlight-blue);
 }
 
 .highlight-green {
-  background: #bff7df;
+  background: var(--dolab-highlight-green);
 }
 
 .highlight-orange {
-  background: #ffe2a8;
+  background: var(--dolab-highlight-orange);
 }
 
 .highlight-pink {
-  background: #ffd6e7;
+  background: var(--dolab-highlight-pink);
 }
 
 .dolab-section p {
   font-size: 17px;
   line-height: 1.8;
-  color: #444444;
+  color: var(--dolab-muted-text-color);
 }
 
 .about-section {
@@ -149,7 +176,7 @@ body {
 .about-section p {
   font-size: 17px;
   line-height: 1.9;
-  color: #444444;
+  color: var(--dolab-muted-text-color);
   margin: 0 0 14px 0;
 }
 
@@ -162,8 +189,8 @@ body {
 }
 
 .research-card {
-  background: #fafafa;
-  border: 1px solid #e8e8e8;
+  background: var(--dolab-surface-color);
+  border: 1px solid var(--dolab-soft-border-color);
   border-radius: 12px;
   padding: 28px 30px;
 }
@@ -171,13 +198,13 @@ body {
 .research-card h3 {
   font-size: 16px;
   font-weight: 700;
-  color: #111111;
+  color: var(--global-text-color);
   margin: 0 0 10px 0;
 }
 
 .research-card p {
   font-size: 15px;
-  color: #666666;
+  color: var(--dolab-subtle-text-color);
   margin: 0;
   line-height: 1.6;
 }
@@ -192,27 +219,44 @@ body {
   align-items: baseline;
   gap: 20px;
   padding: 16px 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--global-divider-color);
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-item:hover {
+  text-decoration: none;
+}
+
+.news-item:hover .news-text,
+.news-item:focus .news-text {
+  color: var(--global-theme-color);
+}
+
+.news-item:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 .news-date {
   font-size: 13px;
-  color: #999999;
+  color: var(--dolab-date-text-color);
   white-space: nowrap;
   min-width: 90px;
 }
 
 .news-text {
   font-size: 15px;
-  color: #333333;
+  color: var(--dolab-muted-text-color);
   line-height: 1.6;
 }
 
 /* Hiring */
 .hiring-box {
-  background: #f7f9fc;
-  border: 1px solid #e0e8f0;
-  border-left: 4px solid #111111;
+  background: var(--dolab-soft-surface-color);
+  border: 1px solid var(--dolab-hiring-border-color);
+  border-left: 4px solid var(--global-theme-color);
   border-radius: 12px;
   padding: 40px 44px;
   margin: 70px 0;
@@ -225,36 +269,83 @@ body {
 
 .hiring-box p {
   font-size: 16px;
-  color: #555555;
+  color: var(--dolab-muted-text-color);
   line-height: 1.8;
   margin: 0;
 }
 
 /* Contact */
 .contact-box {
-  background: #fafafa;
-  border: 1px solid #e8e8e8;
+  background: var(--dolab-surface-color);
+  border: 1px solid var(--dolab-soft-border-color);
   border-radius: 12px;
   padding: 36px 40px;
   font-size: 16px;
   line-height: 2.2;
-  color: #444444;
+  color: var(--dolab-muted-text-color);
 }
 
 .contact-box strong {
-  color: #111111;
+  color: var(--global-theme-color);
 }
 
-/* Social icons */
 .dolab-social {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin-top: 32px;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-.dolab-social .social {
-  transform: scale(2.5);
-  transform-origin: center top;
-  margin-bottom: 80px;
+.dolab-social-link {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.dolab-social-link:hover {
+  text-decoration: none;
+}
+
+.dolab-social-link img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+}
+
+.dolab-social-cv {
+  background: var(--dolab-social-cv-bg);
+}
+
+.dolab-social-cv span {
+  color: var(--dolab-social-cv-text);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.dolab-social-gmail {
+  background: #ea4335;
+}
+
+.dolab-social-linkedin {
+  background: #0077b5;
+}
+
+.dolab-social-scholar {
+  background: #4285f4;
+}
+
+.dolab-social-orcid {
+  background: #a6ce39;
+}
+
+.dolab-social-researchgate {
+  background: #00ccbb;
 }
 
 @media (max-width: 768px) {
@@ -329,18 +420,31 @@ body {
 <div class="dolab-section">
   <h2 class="highlight-orange">Lab News</h2>
   <div class="news-list">
-    <div class="news-item">
-      <span class="news-date">2026.01</span>
-      <span class="news-text">Paper accepted at <strong>Ocean Engineering</strong> (JCR Q1, Top 3.08%)</span>
-    </div>
-    <div class="news-item">
-      <span class="news-date">2025.12</span>
-      <span class="news-text">Paper accepted at <strong>Journal of Forecasting</strong> (JCR Q1)</span>
-    </div>
-    <div class="news-item">
-      <span class="news-date">2025.12</span>
-      <span class="news-text">DOLab officially opened at Changwon National University</span>
-    </div>
+    {% assign gallery_page = site.pages | where: 'permalink', '/gallery/' | first %}
+    {% if site.news != blank or gallery_page.galleries != blank %}
+      {% assign gallery_news = gallery_page.galleries | sort: 'sortDate' | reverse %}
+      {% for gallery in gallery_news %}
+        <a class="news-item" href="{{ '/gallery/' | relative_url }}?gallery={{ gallery.slug }}">
+          <span class="news-date">{{ gallery.sortDate | date: '%Y.%m' }}</span>
+          <span class="news-text"><strong>{{ gallery.title }}</strong> : {{ gallery.desc }}</span>
+        </a>
+      {% endfor %}
+      {% assign news = site.news | reverse %}
+      {% for item in news %}
+        <a class="news-item" href="{{ item.url | relative_url }}">
+          <span class="news-date">{{ item.date | date: '%Y.%m' }}</span>
+          <span class="news-text">
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              {{ item.title }}
+            {% endif %}
+          </span>
+        </a>
+      {% endfor %}
+    {% else %}
+      <p>No news so far...</p>
+    {% endif %}
   </div>
 </div>
 
@@ -364,24 +468,24 @@ body {
     kimdohee@changwon.ac.kr
   </div>
 
-  <div class="dolab-social" style="display:flex; justify-content:center; gap:20px; margin-top:32px; flex-wrap:wrap;">
-    <a href="/assets/pdf/CV_DoheeKim.pdf" target="_blank" style="width:56px; height:56px; border-radius:50%; background:#111111; display:flex; align-items:center; justify-content:center; text-decoration:none;">
-      <span style="color:white; font-weight:700; font-size:14px;">CV</span>
+  <div class="dolab-social">
+    <a class="dolab-social-link dolab-social-cv" href="/assets/pdf/CV_DoheeKim.pdf" target="_blank">
+      <span>CV</span>
     </a>
-    <a href="mailto:kimdohee@changwon.ac.kr" style="width:56px; height:56px; border-radius:50%; background:#EA4335; display:flex; align-items:center; justify-content:center; text-decoration:none;">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" style="width:28px; height:28px; filter:invert(1);">
+    <a class="dolab-social-link dolab-social-gmail" href="mailto:kimdohee@changwon.ac.kr">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Gmail">
     </a>
-    <a href="https://www.linkedin.com/in/dohee-kim-99a694305" target="_blank" style="width:56px; height:56px; border-radius:50%; background:#0077B5; display:flex; align-items:center; justify-content:center; text-decoration:none;">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" style="width:28px; height:28px; filter:invert(1);">
+    <a class="dolab-social-link dolab-social-linkedin" href="https://www.linkedin.com/in/dohee-kim-99a694305" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn">
     </a>
-    <a href="https://scholar.google.com/citations?user=L6k7jvIAAAAJ" target="_blank" style="width:56px; height:56px; border-radius:50%; background:#4285F4; display:flex; align-items:center; justify-content:center; text-decoration:none;">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlescholar.svg" style="width:28px; height:28px; filter:invert(1);">
+    <a class="dolab-social-link dolab-social-scholar" href="https://scholar.google.com/citations?user=L6k7jvIAAAAJ" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlescholar.svg" alt="Google Scholar">
     </a>
-    <a href="https://orcid.org/0000-0002-8153-1422" target="_blank" style="width:56px; height:56px; border-radius:50%; background:#A6CE39; display:flex; align-items:center; justify-content:center; text-decoration:none;">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/orcid.svg" style="width:28px; height:28px; filter:invert(1);">
+    <a class="dolab-social-link dolab-social-orcid" href="https://orcid.org/0000-0002-8153-1422" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/orcid.svg" alt="ORCID">
     </a>
-    <a href="https://www.researchgate.net/profile/Dohee-Kim-6" target="_blank" style="width:56px; height:56px; border-radius:50%; background:#00CCBB; display:flex; align-items:center; justify-content:center; text-decoration:none;">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/researchgate.svg" style="width:28px; height:28px; filter:invert(1);">
+    <a class="dolab-social-link dolab-social-researchgate" href="https://www.researchgate.net/profile/Dohee-Kim-6" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/researchgate.svg" alt="ResearchGate">
     </a>
   </div>
 </div>

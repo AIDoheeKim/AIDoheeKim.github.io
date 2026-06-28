@@ -16,9 +16,9 @@ nav_order: 7
 .people-section-title {
   font-size: 1.15rem;
   font-weight: 700;
-  color: #003478;
+  color: var(--global-theme-color);
   margin: 2.5rem 0 1rem;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid var(--global-divider-color);
   padding-bottom: 0.5rem;
 }
 
@@ -30,8 +30,8 @@ nav_order: 7
 
 .people-card {
   display: flex;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
@@ -49,7 +49,7 @@ nav_order: 7
   height: 220px;
   object-fit: cover;
   object-position: center top;
-  background: #ffffff;
+  background: var(--global-card-bg-color);
   display: block;
 }
 
@@ -63,62 +63,29 @@ nav_order: 7
 .people-name {
   font-weight: 700;
   font-size: 1rem;
-  color: #111827;
+  color: var(--global-text-color);
   margin-bottom: 0.2rem;
   white-space: normal;
 }
 
 .people-role {
   font-weight: 600;
-  color: #003478;
+  color: var(--global-theme-color);
   margin-bottom: 0.35rem;
   white-space: normal;
 }
 
 .people-email {
   font-size: 0.78rem;
-  color: #555;
+  color: var(--global-text-color-light);
   margin-bottom: 0.7rem;
   word-break: break-all;
 }
 
 .people-interest {
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--global-divider-color);
   padding-top: 0.55rem;
-  color: #333;
-}
-
-/* Dark mode fix */
-html[data-theme="dark"] .people-card,
-html[data-theme="dark"] .people-card.professor {
-  background: #ffffff !important;
-  border-color: #e5e7eb !important;
-}
-
-html[data-theme="dark"] .people-photo {
-  background: #ffffff !important;
-}
-
-html[data-theme="dark"] .people-name {
-  color: #111827 !important;
-}
-
-html[data-theme="dark"] .people-role {
-  color: #003478 !important;
-}
-
-html[data-theme="dark"] .people-email {
-  color: #6b7280 !important;
-}
-
-html[data-theme="dark"] .people-interest {
-  color: #333333 !important;
-  border-top-color: #e5e7eb !important;
-}
-
-html[data-theme="dark"] .people-section-title {
-  color: #7dd3fc !important;
-  border-bottom-color: #4b5563 !important;
+  color: var(--global-text-color);
 }
 
 @media (max-width: 900px) {
@@ -142,7 +109,7 @@ html[data-theme="dark"] .people-section-title {
     height: 520px;
     object-fit: cover;
     object-position: center top;
-    background: #ffffff;
+    background: var(--global-card-bg-color);
   }
 
   .people-info {

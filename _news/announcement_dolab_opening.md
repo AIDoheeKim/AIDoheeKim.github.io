@@ -1,5 +1,6 @@
 ---
 layout: post
+title: DOLab Officially Opened
 date: 2025-12-22 09:00:00+0900
 inline: true
 related_posts: false

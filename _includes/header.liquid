@@ -1,8 +1,8 @@
 <header>
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation" style="background-color: #ffffff; border-bottom: 1px solid #e8ecf0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container" style="padding-left: 8px !important; padding-right: 8px !important;">
 
-      <a class="navbar-brand title" href="{{ '/' | relative_url }}" style="font-size: 1.45rem; color: #111111 !important; font-weight: 900; letter-spacing: -0.6px; margin-left: 0; padding-left: 0;">
+      <a class="navbar-brand title" href="{{ '/' | relative_url }}">
         DOLab
       </a>
 
@@ -25,8 +25,8 @@
         <ul class="navbar-nav ml-auto flex-nowrap" style="margin-right: 0; padding-right: 0;">
 
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}" style="color: #333333; font-weight: 500;">
-              Home
+            <a class="nav-link" href="{{ '/' | relative_url }}">
+              HOME
               {% if page.permalink == '/' %}<span class="sr-only">(current)</span>{% endif %}
             </a>
           </li>
@@ -41,8 +41,7 @@
                 {% endfor %}
                 <li class="nav-item dropdown {% if page.title == p.title or has_active_child %}active{% endif %}">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                    style="color: #333333; font-weight: 500;">
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{- p.title }}
                     {% if page.title == p.title or has_active_child %}<span class="sr-only">(current)</span>{% endif %}
                   </a>
@@ -69,7 +68,7 @@
                   {%- else -%}
                     {%- assign url = p.url -%}
                   {%- endif %}
-                  <a class="nav-link" href="{{ url | relative_url }}" style="color: #333333; font-weight: 500;">
+                  <a class="nav-link" href="{{ url | relative_url }}">
                     {{- p.title }}
                     {% if page.url contains p.url %}<span class="sr-only">(current)</span>{% endif %}
                   </a>
