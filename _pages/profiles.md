@@ -165,9 +165,9 @@ nav_order: 7
 <div class="people-grid">
 
 <div class="people-card">
-  <img class="people-photo" src="/assets/img/moon_kyemongmin.png" alt="Kyemongmin Moon">
+  <img class="people-photo" src="/assets/img/moon_kyeongmin.png" alt="Kyeongmin Moon">
   <div class="people-info">
-    <div class="people-name">Kyemongmin Moon</div>
+    <div class="people-name">Kyeongmin Moon</div>
     <div class="people-role">Undergraduate Intern</div>
     <div class="people-email">20255179@gs.cwnu.ac.kr</div>
     <div class="people-interest">AI, Data Science, Optimization</div>
