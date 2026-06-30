@@ -40,7 +40,6 @@ main {
   --dolab-heading-shadow-color: #111111;
   --dolab-highlight-blue: #d4eeff;
   --dolab-highlight-green: #bff7df;
-  --dolab-highlight-orange: #ffe2a8;
   --dolab-highlight-pink: #ffd6e7;
   --dolab-social-cv-bg: #111111;
   --dolab-social-cv-text: #ffffff;
@@ -58,7 +57,6 @@ html[data-theme="dark"] {
   --dolab-heading-shadow-color: var(--global-text-color);
   --dolab-highlight-blue: #123247;
   --dolab-highlight-green: #173d2c;
-  --dolab-highlight-orange: #49330f;
   --dolab-highlight-pink: #4a2134;
   --dolab-social-cv-bg: #f0f0f0;
   --dolab-social-cv-text: #111111;
@@ -71,9 +69,9 @@ html[data-theme="dark"] {
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-  padding: 100px 0 80px;
+  padding: 90px 0 70px;
   border-bottom: 1px solid var(--global-divider-color);
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .hero-left {
@@ -156,11 +154,9 @@ html[data-theme="dark"] {
 .highlight-green {
   background: var(--dolab-highlight-green);
 }
-
 .highlight-orange {
-  background: var(--dolab-highlight-orange);
+  background: #ffe2a8;
 }
-
 .highlight-pink {
   background: var(--dolab-highlight-pink);
 }
@@ -171,23 +167,11 @@ html[data-theme="dark"] {
   color: var(--dolab-muted-text-color);
 }
 
-.about-section {
-  max-width: 880px;
-}
-
-.about-section p {
-  font-size: 17px;
-  line-height: 1.9;
-  color: var(--dolab-muted-text-color);
-  margin: 0 0 14px 0;
-}
-
 /* Lab News */
 .lab-news-section {
   width: 100%;
   max-width: 880px;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0 0 70px 0;
   transform: none;
 }
 
@@ -487,19 +471,8 @@ html[data-theme="dark"] {
   </div>
 </div>
 
-<div class="dolab-section about-section">
-  <h2 class="highlight-blue">About</h2>
-  <p>
-    DOLab develops data-driven optimization methodologies to solve complex real-world problems.
-  </p>
-  <p>
-    We bridge theoretical foundations and practical applications by combining
-    mathematical modeling with data-centric AI approaches.
-  </p>
-</div>
-
 <div class="dolab-section lab-news-section">
-  <h2 class="highlight-orange">Lab News</h2>
+  <h2 class="highlight-blue">Lab News</h2>
 
   <div class="lab-news-layout">
     <div class="lab-news-list">
@@ -579,7 +552,7 @@ html[data-theme="dark"] {
 </div>
 
 <div class="dolab-section">
-  <h2 class="highlight-green">Research Areas</h2>
+  <h2 class="highlight-orange">Research Areas</h2>
   <div class="research-grid">
     <div class="research-card">
       <h3>Time Series Analysis</h3>
