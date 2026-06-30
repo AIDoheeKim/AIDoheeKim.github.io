@@ -19,7 +19,9 @@ body {
   background-color: var(--global-bg-color) !important;
 }
 
-.post, .page-content, main {
+.post,
+.page-content,
+main {
   background-color: var(--global-bg-color) !important;
 }
 
@@ -180,6 +182,134 @@ html[data-theme="dark"] {
   margin: 0 0 14px 0;
 }
 
+/* Lab News */
+.lab-news-section {
+  width: 100%;
+  max-width: 880px;
+  margin-left: 0;
+  margin-right: 0;
+  transform: none;
+}
+
+.lab-news-layout {
+  display: grid;
+  grid-template-columns: 380px minmax(0, 1fr);
+  gap: 54px;
+  margin-top: 28px;
+  width: 100%;
+  align-items: start;
+}
+
+.lab-news-list {
+  max-height: 520px;
+  overflow-y: auto;
+  border-top: 1px solid var(--global-divider-color);
+  padding-right: 10px;
+}
+
+.lab-news-item {
+  min-height: 76px;
+  padding: 18px 40px 18px 18px;
+  border-bottom: 1px solid var(--global-divider-color);
+  cursor: pointer;
+  position: relative;
+  transition: background 0.18s ease;
+}
+
+.lab-news-item:hover,
+.lab-news-item.active {
+  background: var(--dolab-soft-surface-color);
+}
+
+.lab-news-date {
+  font-size: 13px;
+  color: var(--dolab-date-text-color);
+  margin-bottom: 7px;
+}
+
+.lab-news-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #dbeafe;
+  padding: 3px 9px;
+  border-radius: 999px;
+  margin-left: 8px;
+}
+
+.lab-news-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dolab-muted-text-color);
+  line-height: 1.45;
+  padding-right: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lab-news-item.active .lab-news-title {
+  color: var(--global-text-color);
+  font-weight: 800;
+}
+
+.lab-news-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--dolab-date-text-color);
+  font-size: 22px;
+}
+
+.lab-news-detail {
+  padding-top: 4px;
+  max-width: none;
+  min-height: 360px;
+}
+
+.lab-news-detail-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #dbeafe;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.lab-news-detail-date {
+  font-size: 14px;
+  color: var(--dolab-date-text-color);
+  margin-bottom: 14px;
+}
+
+.lab-news-detail h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--global-text-color);
+  margin: 0 0 22px 0;
+  line-height: 1.4;
+}
+
+.lab-news-detail p {
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--dolab-muted-text-color);
+  margin-bottom: 12px;
+}
+
+.lab-news-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--global-theme-color);
+}
+
 /* Research Grid */
 .research-grid {
   display: grid;
@@ -206,49 +336,6 @@ html[data-theme="dark"] {
   font-size: 15px;
   color: var(--dolab-subtle-text-color);
   margin: 0;
-  line-height: 1.6;
-}
-
-/* News */
-.news-list {
-  margin-top: 16px;
-}
-
-.news-item {
-  display: flex;
-  align-items: baseline;
-  gap: 20px;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--global-divider-color);
-  color: inherit;
-  text-decoration: none;
-}
-
-.news-item:hover {
-  text-decoration: none;
-}
-
-.news-item:hover .news-text,
-.news-item:focus .news-text {
-  color: var(--global-theme-color);
-}
-
-.news-item:focus-visible {
-  outline: 2px solid var(--global-theme-color);
-  outline-offset: 4px;
-  border-radius: 4px;
-}
-
-.news-date {
-  font-size: 13px;
-  color: var(--dolab-date-text-color);
-  white-space: nowrap;
-  min-width: 90px;
-}
-
-.news-text {
-  font-size: 15px;
-  color: var(--dolab-muted-text-color);
   line-height: 1.6;
 }
 
@@ -353,12 +440,32 @@ html[data-theme="dark"] {
     flex-direction: column;
     padding: 60px 0;
   }
+
   .hero-right {
     justify-content: center;
   }
+
+  .lab-news-section {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    transform: none;
+  }
+
+  .lab-news-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .lab-news-list {
+    max-height: 420px;
+  }
+
   .research-grid {
     grid-template-columns: 1fr;
   }
+
   .hiring-box {
     padding: 28px 24px;
   }
@@ -391,6 +498,86 @@ html[data-theme="dark"] {
   </p>
 </div>
 
+<div class="dolab-section lab-news-section">
+  <h2 class="highlight-orange">Lab News</h2>
+
+  <div class="lab-news-layout">
+    <div class="lab-news-list">
+      {% assign gallery_page = site.pages | where: 'permalink', '/gallery/' | first %}
+
+      {% if gallery_page.galleries != blank %}
+        {% assign gallery_news = gallery_page.galleries | sort: 'sortDate' | reverse %}
+        {% for gallery in gallery_news %}
+          <div
+            class="lab-news-item"
+            data-date="{{ gallery.sortDate | date: '%Y.%m.%d' }}"
+            data-tag="{{ gallery.tag | escape }}"
+            data-title="{{ gallery.title | escape }}"
+            data-desc="{{ gallery.desc | strip_html | strip_newlines | escape }}"
+            data-link="{{ '/gallery/' | relative_url }}?gallery={{ gallery.slug }}"
+            onclick="showNewsFromItem(this)"
+          >
+            <div class="lab-news-date">
+              {{ gallery.sortDate | date: '%Y.%m' }}
+              <span class="lab-news-tag">{{ gallery.tag }}</span>
+            </div>
+            <div class="lab-news-title">{{ gallery.title }}</div>
+            <div class="lab-news-arrow">›</div>
+          </div>
+        {% endfor %}
+      {% endif %}
+
+      {% if site.news != blank %}
+        {% assign news = site.news | reverse %}
+        {% for item in news %}
+          {% capture news_desc %}
+            {% if item.inline %}
+              {{ item.content | strip_html | strip_newlines }}
+            {% else %}
+              {{ item.title }}
+            {% endif %}
+          {% endcapture %}
+
+          <div
+            class="lab-news-item"
+            data-date="{{ item.date | date: '%Y.%m.%d' }}"
+            data-tag="News"
+            data-title="{{ item.title | default: news_desc | strip_html | strip_newlines | escape }}"
+            data-desc="{{ news_desc | strip | escape }}"
+            data-link="{{ item.url | relative_url }}"
+            onclick="showNewsFromItem(this)"
+          >
+            <div class="lab-news-date">
+              {{ item.date | date: '%Y.%m' }}
+              <span class="lab-news-tag">News</span>
+            </div>
+            <div class="lab-news-title">
+              {% if item.title %}
+                {{ item.title }}
+              {% else %}
+                {{ news_desc | strip | truncate: 65 }}
+              {% endif %}
+            </div>
+            <div class="lab-news-arrow">›</div>
+          </div>
+        {% endfor %}
+      {% endif %}
+
+      {% if site.news == blank and gallery_page.galleries == blank %}
+        <p>No news so far...</p>
+      {% endif %}
+    </div>
+
+    <div class="lab-news-detail">
+      <div class="lab-news-detail-tag" id="newsDetailTag">News</div>
+      <div class="lab-news-detail-date" id="newsDetailDate"></div>
+      <h3 id="newsDetailTitle">Lab News</h3>
+      <p id="newsDetailDesc">Select a news item to view details.</p>
+      <a id="newsDetailLink" href="#" class="lab-news-link">View more</a>
+    </div>
+  </div>
+</div>
+
 <div class="dolab-section">
   <h2 class="highlight-green">Research Areas</h2>
   <div class="research-grid">
@@ -414,37 +601,6 @@ html[data-theme="dark"] {
       <h3>Multi-modal AI</h3>
       <p>Combining multiple types of data for advanced AI systems.</p>
     </div>
-  </div>
-</div>
-
-<div class="dolab-section">
-  <h2 class="highlight-orange">Lab News</h2>
-  <div class="news-list">
-    {% assign gallery_page = site.pages | where: 'permalink', '/gallery/' | first %}
-    {% if site.news != blank or gallery_page.galleries != blank %}
-      {% assign gallery_news = gallery_page.galleries | sort: 'sortDate' | reverse %}
-      {% for gallery in gallery_news %}
-        <a class="news-item" href="{{ '/gallery/' | relative_url }}?gallery={{ gallery.slug }}">
-          <span class="news-date">{{ gallery.sortDate | date: '%Y.%m' }}</span>
-          <span class="news-text"><strong>{{ gallery.title }}</strong> : {{ gallery.desc }}</span>
-        </a>
-      {% endfor %}
-      {% assign news = site.news | reverse %}
-      {% for item in news %}
-        <a class="news-item" href="{{ item.url | relative_url }}">
-          <span class="news-date">{{ item.date | date: '%Y.%m' }}</span>
-          <span class="news-text">
-            {% if item.inline %}
-              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-            {% else %}
-              {{ item.title }}
-            {% endif %}
-          </span>
-        </a>
-      {% endfor %}
-    {% else %}
-      <p>No news so far...</p>
-    {% endif %}
   </div>
 </div>
 
@@ -489,3 +645,26 @@ html[data-theme="dark"] {
     </a>
   </div>
 </div>
+
+<script>
+function showNewsFromItem(item) {
+  document.getElementById("newsDetailTag").innerText = item.dataset.tag || "News";
+  document.getElementById("newsDetailDate").innerText = item.dataset.date || "";
+  document.getElementById("newsDetailTitle").innerText = item.dataset.title || "Lab News";
+  document.getElementById("newsDetailDesc").innerText = item.dataset.desc || "";
+  document.getElementById("newsDetailLink").href = item.dataset.link || "#";
+
+  document.querySelectorAll(".lab-news-item").forEach(function(newsItem) {
+    newsItem.classList.remove("active");
+  });
+
+  item.classList.add("active");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const firstNewsItem = document.querySelector(".lab-news-item");
+  if (firstNewsItem) {
+    showNewsFromItem(firstNewsItem);
+  }
+});
+</script>
