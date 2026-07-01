@@ -131,8 +131,7 @@ html[data-theme="dark"] {
   margin: 70px 0;
 }
 
-.dolab-section h2,
-.hiring-box h2 {
+.dolab-section h2 {
   font-size: 30px;
   font-family: 'Paperozi_SemiBold', sans-serif !important;
   font-weight: 900 !important;
@@ -154,9 +153,11 @@ html[data-theme="dark"] {
 .highlight-green {
   background: var(--dolab-highlight-green);
 }
+
 .highlight-orange {
   background: #ffe2a8;
 }
+
 .highlight-pink {
   background: var(--dolab-highlight-pink);
 }
@@ -327,15 +328,11 @@ html[data-theme="dark"] {
 .hiring-box {
   background: var(--dolab-soft-surface-color);
   border: 1px solid var(--dolab-hiring-border-color);
-  border-left: 4px solid var(--global-theme-color);
   border-radius: 12px;
-  padding: 40px 44px;
-  margin: 70px 0;
-}
-
-.hiring-box h2 {
-  font-size: 26px;
-  margin-bottom: 16px;
+  padding: 36px 40px;
+  font-size: 16px;
+  line-height: 2.2;
+  color: var(--dolab-muted-text-color);
 }
 
 .hiring-box p {
@@ -577,14 +574,17 @@ html[data-theme="dark"] {
   </div>
 </div>
 
-<div class="hiring-box">
+<div class="dolab-section">
   <h2 class="highlight-pink">Now Hiring</h2>
-  <p>
-    We are actively recruiting <strong>MS/PhD students and undergraduate research interns</strong>
-    who are passionate about AI, optimization, and data science.<br><br>
-    Please send your CV and a brief statement of interest to
-    <strong>kimdohee@changwon.ac.kr</strong>
-  </p>
+
+  <div class="hiring-box">
+    <p>
+      We are actively recruiting <strong>MS/PhD students and undergraduate research interns</strong>
+      who are passionate about AI, optimization, and data science.<br><br>
+      Please send your CV and a brief statement of interest to
+      <strong>kimdohee@changwon.ac.kr</strong>
+    </p>
+  </div>
 </div>
 
 <div class="dolab-section">
