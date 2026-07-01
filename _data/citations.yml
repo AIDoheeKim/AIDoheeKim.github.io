@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-22'
+  last_updated: '2026-07-01'
 papers:
   L6k7jvIAAAAJ:1sJd4Hv_s6UC:
     citations: 3
@@ -74,7 +74,7 @@ papers:
     title: Container volume prediction using time-series decomposition with a long short-term memory models
     year: '2021'
   L6k7jvIAAAAJ:KxtntwgDAa4C:
-    citations: 4
+    citations: 5
     title: Deep learning framework for regional maritime collision risk assessment using CNN and Grad-CAM
     year: '2026'
   L6k7jvIAAAAJ:LkGwnXOMwfcC:
@@ -238,7 +238,7 @@ papers:
     title: "\uC13C\uC11C \uB370\uC774\uD130\uC758 \uC2DC\uACC4\uC5F4 \uD2B9\uC131\uC744 \uACE0\uB824\uD55C \uC120\uBC15 \uC5F0\uB8CC \uC18C\uBAA8\uB7C9 \uC608\uCE21 \uD504\uB808\uC784\uC6CC\uD06C"
     year: '2025'
   L6k7jvIAAAAJ:ns9cj8rnVeAC:
-    citations: 1
+    citations: 2
     title: Continual Learning Approach With Adaptive Memory Mechanism for Predictive Process Monitoring in Dynamic Business Environments
     year: '2025'
   L6k7jvIAAAAJ:p2g8aNsByqUC:
