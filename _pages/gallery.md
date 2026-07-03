@@ -56,6 +56,44 @@ galleries:
 ---
 
 <style>
+:root {
+  --gallery-surface: var(--global-card-bg-color);
+  --gallery-surface-muted: #f3f4f6;
+  --gallery-text: var(--global-text-color);
+  --gallery-text-muted: var(--global-text-color-light);
+  --gallery-border: var(--global-divider-color);
+  --gallery-card-shadow: 0 6px 18px rgba(0,0,0,0.07);
+  --gallery-modal-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  --gallery-date-bg: #f3f4f6;
+  --gallery-date-text: #374151;
+  --gallery-tag-bg: #dbeafe;
+  --gallery-tag-text: #1d4ed8;
+  --gallery-accent: #1d4ed8;
+  --gallery-label: #059669;
+  --gallery-control-bg: #ffffff;
+  --gallery-control-text: #111827;
+  --gallery-backdrop: rgba(0,0,0,0.65);
+}
+
+html[data-theme="dark"] {
+  --gallery-surface: var(--global-card-bg-color);
+  --gallery-surface-muted: #202124;
+  --gallery-text: var(--global-text-color);
+  --gallery-text-muted: #b7bbc3;
+  --gallery-border: var(--global-divider-color);
+  --gallery-card-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  --gallery-modal-shadow: 0 24px 70px rgba(0,0,0,0.55);
+  --gallery-date-bg: rgba(255,255,255,0.08);
+  --gallery-date-text: #d1d5db;
+  --gallery-tag-bg: rgba(34,211,238,0.16);
+  --gallery-tag-text: #67e8f9;
+  --gallery-accent: var(--global-theme-color);
+  --gallery-label: #34d399;
+  --gallery-control-bg: #2f3035;
+  --gallery-control-text: #f3f4f6;
+  --gallery-backdrop: rgba(0,0,0,0.82);
+}
+
 .gallery-wrap {
   max-width: 1100px;
   margin: 0 auto;
@@ -65,7 +103,7 @@ galleries:
   text-align: center;
   font-size: 2.2rem;
   font-weight: 800;
-  color: #111827;
+  color: var(--gallery-text);
   margin: 2rem 0 3rem;
 }
 
@@ -76,17 +114,18 @@ galleries:
 }
 
 .gallery-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
+  background: var(--gallery-surface);
+  border: 1px solid var(--gallery-border);
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+  box-shadow: var(--gallery-card-shadow);
   cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .gallery-card:hover {
   transform: translateY(-3px);
-  transition: 0.2s;
+  border-color: var(--gallery-accent);
 }
 
 .gallery-image {
@@ -95,7 +134,7 @@ galleries:
   object-fit: cover;
   object-position: center;
   display: block;
-  background: #f3f4f6;
+  background: var(--gallery-surface-muted);
 }
 
 .gallery-info {
@@ -105,7 +144,7 @@ galleries:
 .gallery-name {
   font-size: 1rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--gallery-text);
   margin-bottom: 0.5rem;
 }
 
@@ -113,8 +152,8 @@ galleries:
   display: inline-block;
   font-size: 0.78rem;
   font-weight: 700;
-  color: #374151;
-  background: #f3f4f6;
+  color: var(--gallery-date-text);
+  background: var(--gallery-date-bg);
   padding: 0.22rem 0.55rem;
   border-radius: 999px;
   margin-bottom: 0.55rem;
@@ -124,8 +163,8 @@ galleries:
   display: inline-block;
   font-size: 0.72rem;
   font-weight: 600;
-  color: #1d4ed8;
-  background: #dbeafe;
+  color: var(--gallery-tag-text);
+  background: var(--gallery-tag-bg);
   padding: 0.25rem 0.55rem;
   border-radius: 999px;
   margin-bottom: 0.7rem;
@@ -133,7 +172,7 @@ galleries:
 
 .gallery-desc {
   font-size: 0.82rem;
-  color: #4b5563;
+  color: var(--gallery-text-muted);
   line-height: 1.5;
 }
 
@@ -142,7 +181,7 @@ galleries:
   position: fixed;
   z-index: 9999;
   inset: 0;
-  background: rgba(0,0,0,0.65);
+  background: var(--gallery-backdrop);
   align-items: center;
   justify-content: center;
   padding: 2rem;
@@ -153,18 +192,19 @@ galleries:
 }
 
 .gallery-modal-box {
-  background: #ffffff;
+  background: var(--gallery-surface);
   width: min(900px, 95vw);
   max-height: 90vh;
-  border-radius: 14px;
+  border: 1px solid var(--gallery-border);
+  border-radius: 8px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  box-shadow: var(--gallery-modal-shadow);
 }
 
 .gallery-modal-image-wrap {
   position: relative;
-  background: #f3f4f6;
+  background: var(--gallery-surface-muted);
   text-align: center;
 }
 
@@ -184,7 +224,8 @@ galleries:
   height: 34px;
   border: none;
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--gallery-control-bg);
+  color: var(--gallery-control-text);
   font-size: 1.2rem;
   cursor: pointer;
   z-index: 2;
@@ -199,7 +240,8 @@ galleries:
   height: 38px;
   border: none;
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--gallery-control-bg);
+  color: var(--gallery-control-text);
   cursor: pointer;
   font-size: 1.4rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
@@ -212,8 +254,8 @@ galleries:
   position: absolute;
   right: 14px;
   bottom: 12px;
-  background: #ffffff;
-  color: #111827;
+  background: var(--gallery-control-bg);
+  color: var(--gallery-control-text);
   font-size: 0.75rem;
   padding: 0.25rem 0.55rem;
   border-radius: 999px;
@@ -227,20 +269,20 @@ galleries:
 .gallery-modal-title {
   font-size: 1.45rem;
   font-weight: 800;
-  color: #111827;
+  color: var(--gallery-text);
   margin-bottom: 0.4rem;
 }
 
 .gallery-modal-date {
   font-size: 0.85rem;
-  color: #6b7280;
+  color: var(--gallery-text-muted);
   margin-bottom: 1rem;
 }
 
 .gallery-modal-label {
   font-size: 0.75rem;
   font-weight: 800;
-  color: #059669;
+  color: var(--gallery-label);
   margin-top: 1rem;
   margin-bottom: 0.3rem;
   text-transform: uppercase;
@@ -259,10 +301,11 @@ galleries:
   border-radius: 6px;
   cursor: pointer;
   border: 2px solid transparent;
+  background: var(--gallery-surface-muted);
 }
 
 .gallery-thumb.active {
-  border-color: #1d4ed8;
+  border-color: var(--gallery-accent);
 }
 
 @media (max-width: 900px) {
@@ -304,6 +347,7 @@ galleries:
       <div class="gallery-modal-label">Images</div>
       <div class="gallery-thumbs" id="modalThumbs"></div>
     </div>
+
   </div>
 </div>
 

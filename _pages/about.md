@@ -39,6 +39,7 @@ main {
   --dolab-heading-shadow-color: #111111;
   --dolab-highlight-blue: #d4eeff;
   --dolab-highlight-green: #bff7df;
+  --dolab-highlight-orange: #ffe2a8;
   --dolab-highlight-pink: #ffd6e7;
   --dolab-social-cv-bg: #111111;
   --dolab-social-cv-text: #ffffff;
@@ -55,6 +56,7 @@ html[data-theme="dark"] {
   --dolab-heading-shadow-color: var(--global-text-color);
   --dolab-highlight-blue: #123247;
   --dolab-highlight-green: #173d2c;
+  --dolab-highlight-orange: #4a3215;
   --dolab-highlight-pink: #4a2134;
   --dolab-social-cv-bg: #f0f0f0;
   --dolab-social-cv-text: #111111;
@@ -157,7 +159,7 @@ html[data-theme="dark"] {
 }
 
 .highlight-orange {
-  background: #ffe2a8;
+  background: var(--dolab-highlight-orange);
 }
 
 .highlight-pink {
