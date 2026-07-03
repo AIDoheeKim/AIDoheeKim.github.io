@@ -110,6 +110,10 @@ html[data-theme="dark"] {
   margin: 0;
 }
 
+.hero-left .hero-tagline span {
+  display: block;
+}
+
 .hero-right {
   flex: 1.5;
   display: flex;
@@ -351,7 +355,10 @@ html[data-theme="dark"] {
       <span>@ Changwon National</span>
       <span class="univ-indent">University</span>
     </p>
-    <p class="hero-tagline">Optimizing the Real World through<br> Data-Driven Intelligence</p>
+    <p class="hero-tagline">
+      <span>Optimizing the Real World through</span>
+      <span>Data-Driven Intelligence</span>
+    </p>
   </div>
   <div class="hero-right">
     <img src="/assets/img/dolab-logo-wide.png" alt="DOLab Logo">
@@ -363,23 +370,23 @@ html[data-theme="dark"] {
 
   <ul class="simple-news-list">
     <li>
- <span class="news-date">[2026.07.01]</span>
-  우리 연구실이 과학기술정보통신부와 교육부가 지원하는 「2026년 국가연구실 2.0(NRL 2.0) 사업」에 최종 선정되었습니다.
-  <a href="https://news.unn.net/news/articleView.html?idxno=594041"
-     class="news-link"
-     target="_blank"
-     rel="noopener noreferrer">[Link]</a>
+      <span class="news-date">[2026.07.01]</span>
+      우리 연구실이 과학기술정보통신부와 교육부가 지원하는 「2026년 국가연구실 2.0(NRL 2.0) 사업」에 최종 선정되었습니다.
+      <a href="https://news.unn.net/news/articleView.html?idxno=594041"
+         class="news-link"
+         target="_blank"
+         rel="noopener noreferrer">[Link]</a>
     </li>
-    
-   <li>
-    <span class="news-date">[2026.06.04]</span>
+
+    <li>
+      <span class="news-date">[2026.06.04]</span>
       홍진영 학생이 2026 대한산업공학회 춘계공동학술대회에서 발표하였습니다.
       <a href="/gallery/?gallery=2026-spring-joint-conference-industrial-engineering"
-      class="news-link">[Photos]</a>
+         class="news-link">[Photos]</a>
     </li>
-    
-  <li>
-     <span class="news-date">[2025.12.22]</span>
+
+    <li>
+      <span class="news-date">[2025.12.22]</span>
       🎉 <strong>Data Optimization Lab (DOLab)</strong> officially opened on December 22, 2025!
       We are excited to begin our research journey in data-driven decision-making and optimization at Changwon National University.
     </li>
