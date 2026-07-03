@@ -351,7 +351,7 @@ html[data-theme="dark"] {
       <span>@ Changwon National</span>
       <span class="univ-indent">University</span>
     </p>
-    <p class="hero-tagline">Optimizing the Real World through Data-Driven Intelligence</p>
+    <p class="hero-tagline">Optimizing the Real World through<br> Data-Driven Intelligence</p>
   </div>
   <div class="hero-right">
     <img src="/assets/img/dolab-logo-wide.png" alt="DOLab Logo">
