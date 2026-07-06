@@ -319,7 +319,6 @@ html[data-theme="dark"] {
 </style>
 
 <div class="gallery-wrap">
-  <div class="gallery-title">GALLERY</div>
   <div class="gallery-grid" id="galleryGrid"></div>
 </div>
 
