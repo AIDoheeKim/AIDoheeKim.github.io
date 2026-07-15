@@ -371,6 +371,16 @@ html[data-theme="dark"] {
   <h2 class="highlight-blue">Lab News</h2>
 
   <ul class="simple-news-list">
+
+    <li>
+      <span class="news-date">[2026.07.15]</span>
+      김도희 교수가 참여하는 「헬스케어제품 멀티모달형 AI 플랫폼 기반구축」 사업이 산업통상자원부 바이오산업기반구축사업에 선정되었습니다.
+      <a href="https://www.changwon.ac.kr/portal/na/ntt/selectNttInfo.do?mi=18685&bbsId=7315&nttSn=1422104"
+         class="news-link"
+         target="_blank"
+         rel="noopener noreferrer">[Link]</a>
+    </li>
+
     <li>
       <span class="news-date">[2026.07.01]</span>
       우리 연구실이 과학기술정보통신부와 교육부가 지원하는 「2026년 국가연구실 2.0(NRL 2.0) 사업」에 최종 선정되었습니다.
@@ -382,7 +392,7 @@ html[data-theme="dark"] {
 
     <li>
       <span class="news-date">[2026.06.04]</span>
-      홍진영 학생이 2026 대한산업공학회 춘계공동학술대회에서 발표하였습니다.
+      홍진영 학생이 2026 대한산업공학회 춘계공동학술대회에서 연구 결과를 발표하였습니다.
       <a href="/gallery/?gallery=2026-spring-joint-conference-industrial-engineering"
          class="news-link">[Photos]</a>
     </li>
@@ -392,6 +402,7 @@ html[data-theme="dark"] {
       🎉 <strong>Data Optimization Lab (DOLab)</strong> officially opened on December 22, 2025!
       We are excited to begin our research journey in data-driven decision-making and optimization at Changwon National University.
     </li>
+
   </ul>
 </div>
 
