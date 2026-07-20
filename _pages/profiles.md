@@ -2,7 +2,7 @@
 layout: page
 permalink: /people/
 title: PEOPLE
-description: members of the lab or group
+description: members of the lab 
 nav: true
 nav_order: 7
 ---
@@ -215,7 +215,7 @@ nav_order: 7
 
         <div class="people-interest">
           <strong>Area of Interests :</strong>
-          AI, Data Science, Optimization
+          Data Science, Database, Digital Twin
         </div>
       </div>
     </div>
