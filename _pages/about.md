@@ -181,7 +181,7 @@ html[data-theme="dark"] {
 
 /* Partners marquee */
 .partners-section {
-  margin: 0 0 56px 0;
+  margin: 0 0 40px 0;
   padding-top: 0;
 }
 

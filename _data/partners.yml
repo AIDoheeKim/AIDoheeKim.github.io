@@ -16,12 +16,12 @@
 
 - name: "국가연구실 2.0 (NRL 2.0)"
   image: /assets/img/partners/nrl-2.0.png
-  height: 70
-  
+  height: 60
+
 - name: "LG전자 (LG Electronics)"
   image: /assets/img/partners/lg-electronics.png
-  height: 60
+  height: 50
 
 - name: "자연동화"
   image: /assets/img/partners/jayeondonghwa.png
-  height: 35
+  height: 30
