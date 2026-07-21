@@ -7,6 +7,14 @@ nav: true
 nav_order: 6
 ---
 
+**Database and Big Data Systems**   
+- *Fall 2026, Changwon National University, Graduate*  
+- Instructor – Lecturing, grading, practical sessions, and proctoring.
+
+**Python Programming in the Age of AI**   
+- *Fall 2026, Changwon National University, Undergraduate*  
+- Instructor – Lecturing, grading, practical sessions, and proctoring.
+
 **Multimodal AI** (AIB3020)  
 - *Spring 2026, Changwon National University, Graduate*  
 - Instructor – Lecturing, grading, practical sessions, and proctoring.
