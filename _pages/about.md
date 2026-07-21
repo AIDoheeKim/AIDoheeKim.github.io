@@ -6,6 +6,13 @@ nav: true
 nav_order: 1
 ---
 
+{% assign partners = site.data.partners %}
+{% assign partner_count = partners.size %}
+{% assign min_items = 20 %}
+{% assign repeat_count = min_items | plus: partner_count | minus: 1 | divided_by: partner_count %}
+{% if repeat_count < 2 %}{% assign repeat_count = 2 %}{% endif %}
+{% assign loop_percent = 100.0 | divided_by: repeat_count | round: 4 %}
+
 <style>
 .page-title,
 h1.post-title,
@@ -71,7 +78,7 @@ html[data-theme="dark"] {
   gap: 60px;
   padding: 90px 0 70px;
   border-bottom: 1px solid var(--global-divider-color);
-  margin-bottom: 70px;
+  margin-bottom: 36px;
 }
 
 .hero-left {
@@ -170,6 +177,71 @@ html[data-theme="dark"] {
   font-size: 17px;
   line-height: 1.8;
   color: var(--dolab-muted-text-color);
+}
+
+/* Partners marquee */
+.partners-section {
+  margin: 0 0 56px 0;
+  padding-top: 0;
+}
+
+.partners-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+
+.partners-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: partners-scroll 12s linear infinite;
+  animation-play-state: running !important;
+}
+
+.partners-marquee:hover .partners-track {
+  animation-play-state: paused;
+}
+
+/* The track repeats the partner list `repeat_count` times (computed above
+   from the number of entries in _data/partners.yml, minimum 2) so the row
+   always overflows the viewport width. Looping at -{loop_percent}% (i.e.
+   1/repeat_count of the track) lands exactly back on an identical copy, so
+   the scroll never runs out of content or visibly jumps.
+
+   Important: spacing between logos is done with margin-right on
+   .partner-logo (not `gap` on this flex container). With `gap`, the last
+   item has no trailing space, so the track's total width would be
+   `repeat_count * period - gap` instead of an exact multiple of
+   repeat_count — making the -{loop_percent}% jump land short by
+   (gap / repeat_count)px every single loop, which shows up as a stutter.
+   margin-right on every item (including the last) keeps the width an exact
+   multiple of repeat_count so the loop is pixel-perfect. */
+@keyframes partners-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-{{ loop_percent }}%, 0, 0);
+  }
+}
+
+.partner-logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-right: 72px;
+}
+
+.partner-logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 /* Simple Lab News */
@@ -364,6 +436,21 @@ html[data-theme="dark"] {
   </div>
   <div class="hero-right">
     <img src="/assets/img/dolab-logo-wide.png" alt="DOLab Logo">
+  </div>
+</div>
+
+<!-- Partners marquee -->
+<div class="dolab-section partners-section">
+  <div class="partners-marquee">
+    <div class="partners-track">
+      {% for i in (1..repeat_count) %}{% for partner in partners %}{% assign logo_height = partner.height | default: 40 %}{% if i == 1 %}<div class="partner-logo{% if partner.class %} {{ partner.class }}{% endif %}" style="height: {{ logo_height }}px;">
+        <img src="{{ partner.image }}" alt="{{ partner.name }}">
+      </div>
+      {% else %}<div class="partner-logo{% if partner.class %} {{ partner.class }}{% endif %}" style="height: {{ logo_height }}px;" aria-hidden="true">
+        <img src="{{ partner.image }}" alt="">
+      </div>
+      {% endif %}{% endfor %}{% endfor %}
+    </div>
   </div>
 </div>
 

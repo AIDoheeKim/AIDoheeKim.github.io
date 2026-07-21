@@ -1,0 +1,27 @@
+# Partner / affiliated-project logos shown in the scrolling marquee on the home page.
+#
+# To add a new partner: just add another entry below, and drop the logo
+# image into /assets/img/partners/. The marquee's repeat count and loop
+# distance are computed automatically in index.md from how many entries are
+# listed here — nothing else needs to change.
+#
+# Fields:
+#   name   (required) - used as the logo's alt text for accessibility/SEO
+#   image  (required) - path to the logo file under /assets/img/partners/
+#   height (optional) - display height in px (default: 40). Bump this up
+#                        for logos that look small next to the others —
+#                        e.g. tall/square marks usually need a bigger
+#                        number than wide wordmark logos to read as the
+#                        same visual size.
+
+- name: "국가연구실 2.0 (NRL 2.0)"
+  image: /assets/img/partners/nrl-2.0.png
+  height: 70
+  
+- name: "LG전자 (LG Electronics)"
+  image: /assets/img/partners/lg-electronics.png
+  height: 60
+
+- name: "자연동화"
+  image: /assets/img/partners/jayeondonghwa.png
+  height: 35
