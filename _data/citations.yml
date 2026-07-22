@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-01'
+  last_updated: '2026-07-22'
 papers:
   L6k7jvIAAAAJ:1sJd4Hv_s6UC:
     citations: 3
@@ -58,7 +58,7 @@ papers:
     title: "2024 IEEE 6th International Conference on Cognitive Machine Intelligence (CogMI)| 979-8-3503-8672-1/24/$31.00\xA9 2024 IEEE| DOI: 10.1109/CogMI62246. 2024.00046"
     year: Unknown Year
   L6k7jvIAAAAJ:GnPB-g6toBAC:
-    citations: 15
+    citations: 16
     title: 'Artificial intelligence-based smart port logistics metaverse for enhancing productivity, environment, and safety in port logistics: A case study of Busan Port'
     year: '2024'
   L6k7jvIAAAAJ:HDshCWvjkbEC:
@@ -138,11 +138,11 @@ papers:
     title: Method and device for imputing missing values in dual-directional ais data based on deep learning
     year: '2025'
   L6k7jvIAAAAJ:W7OEmFMy1HYC:
-    citations: 21
+    citations: 22
     title: Method of predictive maintenance for induction furnace based on neural network
     year: '2020'
   L6k7jvIAAAAJ:WbkHhVStYXYC:
-    citations: 0
+    citations: 1
     title: 'LoopUS: Recasting Pretrained LLMs into Looped Latent Refinement Models'
     year: '2026'
   L6k7jvIAAAAJ:Wp0gIr-vW9MC:
@@ -158,7 +158,7 @@ papers:
     title: Estimating container dwell time and forecasting port congestion using bayesian network
     year: '2024'
   L6k7jvIAAAAJ:YOwf2qJgpHMC:
-    citations: 23
+    citations: 24
     title: 'Correlation recurrent units: A novel neural architecture for improving the predictive performance of time-series data'
     year: '2023'
   L6k7jvIAAAAJ:YsMSGLbcyi4C:
@@ -244,7 +244,7 @@ papers:
   L6k7jvIAAAAJ:p2g8aNsByqUC:
     citations: 0
     title: Distributed Lag Transformer based on Time-Variable-Aware Learning for Explainable Multivariate Time Series Forecasting
-    year: '2024'
+    year: '2026'
   L6k7jvIAAAAJ:pyW8ca7W8N0C:
     citations: 0
     title: "\uBB34\uAE30\uCCB4\uACC4 \uC0C1\uD0DC \uAE30\uBC18 \uC815\uBE44\uB97C \uC704\uD55C \uC778\uACF5\uC2E0\uACBD\uB9DD \uAE30\uBC18 \uC0C1\uD0DC\uC9C4\uB2E8\uBAA8\uB378 \uAC1C\uBC1C"
@@ -266,7 +266,7 @@ papers:
     title: "\uC784\uACD7\uAC12 \uCD5C\uC801\uD654 \uAE30\uBC18 \uC6A9\uC811 \uACB0\uD568 \uBD84\uB958: \uD074\uB798\uC2A4 \uBD88\uADE0\uD615 \uBB38\uC81C \uD574\uC18C\uB97C \uC911\uC2EC\uC73C\uB85C"
     year: '2025'
   L6k7jvIAAAAJ:uWQEDVKXjbEC:
-    citations: 1
+    citations: 2
     title: 'FEATHer: Fourier-Efficient Adaptive Temporal Hierarchy Forecaster for Time-Series Forecasting'
     year: '2026'
   L6k7jvIAAAAJ:u_35RYKgDlwC:
