@@ -19,7 +19,8 @@
   height: 60
 
 - name: "LG전자 (LG Electronics)"
-  image: /assets/img/partners/lg-electronics.png
+  image: /assets/img/partners/lg_logo.svg
+  class: lg-electronics
   height: 50
 
 - name: "자연동화"

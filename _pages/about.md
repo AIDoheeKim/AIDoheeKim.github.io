@@ -51,6 +51,7 @@ main {
   --dolab-social-cv-bg: #111111;
   --dolab-social-cv-text: #ffffff;
   --dolab-logo-filter: none;
+  --dolab-partner-logo-filter: none;
 }
 
 html[data-theme="dark"] {
@@ -68,6 +69,7 @@ html[data-theme="dark"] {
   --dolab-social-cv-bg: #f0f0f0;
   --dolab-social-cv-text: #111111;
   --dolab-logo-filter: invert(1) hue-rotate(180deg) saturate(1.15);
+  --dolab-partner-logo-filter: brightness(0) invert(1);
 }
 
 /* Hero */
@@ -242,6 +244,13 @@ html[data-theme="dark"] {
   width: auto;
   object-fit: contain;
   display: block;
+  filter: var(--dolab-partner-logo-filter);
+}
+
+/* The LG mark's original white details become transparent in dark mode,
+   preserving the symbol instead of flattening it into a solid white disc. */
+html[data-theme="dark"] .partner-logo.lg-electronics img {
+  content: url('/assets/img/partners/lg_logo_dark.svg');
 }
 
 /* Simple Lab News */
