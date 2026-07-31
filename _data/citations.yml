@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-22'
+  last_updated: '2026-07-31'
 papers:
   L6k7jvIAAAAJ:1sJd4Hv_s6UC:
     citations: 3
@@ -74,7 +74,7 @@ papers:
     title: Container volume prediction using time-series decomposition with a long short-term memory models
     year: '2021'
   L6k7jvIAAAAJ:KxtntwgDAa4C:
-    citations: 5
+    citations: 6
     title: Deep learning framework for regional maritime collision risk assessment using CNN and Grad-CAM
     year: '2026'
   L6k7jvIAAAAJ:LkGwnXOMwfcC:
@@ -106,7 +106,7 @@ papers:
     title: 'ACFormer: Mitigating Non-linearity with Auto Convolutional Encoder for Time Series Forecasting'
     year: '2026'
   L6k7jvIAAAAJ:P5F9QuxV20EC:
-    citations: 0
+    citations: 1
     title: 'IConv: Focusing on Local Variation with Channel Independent Convolution for Multivariate Time Series Forecasting'
     year: '2025'
   L6k7jvIAAAAJ:RGFaLdJalmkC:
@@ -206,7 +206,7 @@ papers:
     title: Method and apparatus for predicting recipe property reflecting similarity between chemical materials
     year: '2024'
   L6k7jvIAAAAJ:f2IySw72cVMC:
-    citations: 9
+    citations: 8
     title: "Long\u2010term forecasting of maritime economics index using time\u2010series decomposition and two\u2010stage attention"
     year: '2025'
   L6k7jvIAAAAJ:fPk4N6BV_jEC:
