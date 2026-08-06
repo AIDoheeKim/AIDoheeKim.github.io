@@ -4,6 +4,7 @@ title: HOME
 permalink: /
 nav: true
 nav_order: 1
+description: "DOLAB (Do-Lab) - Data Optimization Lab at Changwon National University"
 ---
 
 {% assign partners = site.data.partners %}
@@ -95,6 +96,13 @@ html[data-theme="dark"] {
   margin: 0 0 12px 0;
   background: none !important;
   padding: 0 !important;
+}
+.hero-left .hero-pronunciation {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  margin: -4px 0 16px 0;
+  letter-spacing: 0.02em;
 }
 
 .hero-left .hero-univ {
@@ -434,6 +442,7 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
 <div class="dolab-hero">
   <div class="hero-left">
     <h1>Data Optimization Lab</h1>
+    <p class="hero-pronunciation">DOLAB (Do-Lab)</p>
     <p class="hero-univ">
       <span>@ Changwon National</span>
       <span class="univ-indent">University</span>
