@@ -32,6 +32,15 @@ nav_order: 2
   line-height: 1.2 !important;
 }
 
+/* 연도(2026, 2025...) 진하게 */
+.publications h2.bibliography {
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111 !important;
+  text-shadow: none !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
 /* 검색 하이라이트 검은색 방지 */
 .publications mark,
 .publications .highlight,
