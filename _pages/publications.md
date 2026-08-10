@@ -25,7 +25,7 @@ nav_order: 2
   background-image: none !important;
   box-shadow: none !important;
   border: none !important;
-  color: #111111 !important;
+  color: var(--global-theme-color) !important;
   text-shadow: none !important;
   padding: 2px 8px !important;
   border-radius: 2px !important;
@@ -34,8 +34,8 @@ nav_order: 2
 
 /* 연도(2026, 2025...) 진하게 */
 .publications h2.bibliography {
-  color: #111111 !important;
-  -webkit-text-fill-color: #111111 !important;
+  color: var(--global-theme-color); !important;
+  -webkit-text-fill-color: var(--global-theme-color) !important;
   text-shadow: none !important;
   font-weight: 700 !important;
   opacity: 1 !important;
@@ -47,8 +47,8 @@ nav_order: 2
 .publications .search-highlight,
 .publications .search-match {
   background: #fff3a3 !important;
-  color: #111111 !important;
-  -webkit-text-fill-color: #111111 !important;
+  color: var(--global-theme-color) !important;
+  -webkit-text-fill-color: var(--global-theme-color) !important;
 }
 </style>
 
