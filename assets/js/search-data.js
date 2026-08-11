@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-home",
           title: "HOME",
-          description: "DOLAB (Do-Lab) - Data Optimization Lab at Changwon National University",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/";
