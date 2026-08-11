@@ -4,7 +4,6 @@ title: HOME
 permalink: /
 nav: true
 nav_order: 1
-description: "DOLAB (Do-Lab) - Data Optimization Lab at Changwon National University"
 ---
 
 {% assign partners = site.data.partners %}
