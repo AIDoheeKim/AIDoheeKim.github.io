@@ -206,7 +206,7 @@ html[data-theme="dark"] {
   display: flex;
   align-items: center;
   width: max-content;
-  animation: partners-scroll 12s linear infinite;
+  animation: partners-scroll 17s linear infinite;
   animation-play-state: running !important;
 }
 
@@ -441,7 +441,7 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
 <div class="dolab-hero">
   <div class="hero-left">
     <h1>Data Optimization Lab</h1>
-    <p class="hero-pronunciation">DOLAB (Do-Lab)</p>
+    <p class="hero-pronunciation"></p>
     <p class="hero-univ">
       <span>@ Changwon National</span>
       <span class="univ-indent">University</span>
