@@ -12,7 +12,7 @@ galleries:
     sortDate: 2026-08-19
     location: Shenyang, China
     tag: Conference
-    desc: DOLab participated in the 2026 IEEE International Conference on Automation Science and Engineering (IEEE CASE 2026) in Shenyang, China.
+    desc: DOLab participated in IEEE CASE 2026 in Shenyang, China.
     images:
       - /assets/img/gallery/ieee_case_2026_1.jpg
       - /assets/img/gallery/ieee_case_2026_2.jpg
@@ -28,7 +28,7 @@ galleries:
     sortDate: 2026-06-12
     location: Changwon National University
     tag: Lab Events
-    desc: LG Electronics executives visited DOLab and were introduced to our research activities and ongoing projects.
+    desc: LG Electronics executives visited DOLab.
     images:
       - /assets/img/gallery/lg.jpg
       - /assets/img/gallery/lg1.jpg
