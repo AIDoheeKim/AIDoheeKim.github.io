@@ -474,8 +474,15 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
 <div class="dolab-section lab-news-section">
   <h2 class="highlight-blue">Lab News</h2>
 
-  <ul class="simple-news-list">
-
+ <ul class="simple-news-list">
+   
+    <li>
+    <span class="news-date">[2026.08.20]</span>
+    김도희 교수가 중국 선양에서 개최된 IEEE CASE 2026에서 연구 결과를 발표하였습니다.
+    <a href="/gallery/?gallery=ieee-case-2026"
+     class="news-link">[Photos]</a>
+    </li>
+   
     <li>
       <span class="news-date">[2026.07.15]</span>
       김도희 교수가 참여하는 「헬스케어제품 멀티모달형 AI 플랫폼 기반구축」 사업이 산업통상자원부 바이오산업기반구축사업에 선정되었습니다.
