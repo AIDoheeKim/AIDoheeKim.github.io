@@ -8,7 +8,7 @@ nav_order: 8
 galleries:
   - slug: ieee-case-2026
     title: IEEE CASE 2026
-    date: August 19–21, 2026
+    date: August 17–21, 2026
     sortDate: 2026-08-19
     location: Shenyang, China
     tag: Conference
