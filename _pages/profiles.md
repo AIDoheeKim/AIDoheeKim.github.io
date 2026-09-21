@@ -2,7 +2,7 @@
 layout: page
 permalink: /people/
 title: PEOPLE
-description: members of the lab 
+description: members of the lab
 nav: true
 nav_order: 7
 ---
@@ -67,6 +67,15 @@ nav_order: 7
   font-size: 1rem;
   font-weight: 700;
   white-space: normal;
+}
+
+.people-name a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.people-name a:hover {
+  color: var(--global-theme-color);
 }
 
 .people-role {
@@ -146,6 +155,36 @@ nav_order: 7
         <strong>Research Areas :</strong>
         Data Optimization, Machine Learning, Deep Learning,
         Explainable AI (XAI), Multimodal AI
+      </div>
+    </div>
+  </div>
+
+
+  <div class="people-section-title">Researcher</div>
+
+  <div class="people-card single">
+    <img
+      class="people-photo"
+      src="/assets/img/jo_sangmin.jpg"
+      alt="Sangmin Jo"
+    >
+
+    <div class="people-info">
+      <div class="people-name">
+        <a
+          href="https://baelab.pusan.ac.kr/pnuProfl/baelab/2245/28624/artclView.do"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sangmin Jo
+        </a>
+      </div>
+
+      <div class="people-role">Researcher</div>
+
+      <div class="people-interest">
+        <strong>Research Areas :</strong>
+        Process Mining, Data Mining
       </div>
     </div>
   </div>
@@ -296,26 +335,6 @@ nav_order: 7
         <div class="people-interest">
           <strong>Area of Interests :</strong>
           Digital Twin, Machine Learning, Data Optimization
-        </div>
-      </div>
-    </div>
-
-
-    <div class="people-card">
-      <img
-        class="people-photo"
-        src="/assets/img/park_jiwoo.jpg"
-        alt="Jiwoo Park"
-      >
-
-      <div class="people-info">
-        <div class="people-name">Jiwoo Park</div>
-        <div class="people-admission">2025.03</div>
-        <div class="people-email">20255183@gs.cwnu.ac.kr</div>
-
-        <div class="people-interest">
-          <strong>Area of Interests :</strong>
-          Machine Learning, Data Science
         </div>
       </div>
     </div>
