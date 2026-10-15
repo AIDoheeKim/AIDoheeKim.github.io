@@ -475,8 +475,19 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
   <h2 class="highlight-blue">Lab News</h2>
 
  <ul class="simple-news-list">
-   
+    
     <li>
+    <span class="news-date">[2026.10.13]</span>
+    국립창원대학교 AI-원전제조 혁신연구센터가 두산에너빌리티와 원전기기·부품 제조기술 고도화를 위한 산학연계 공동연구에 착수하였습니다.
+    <a href="https://www.changwon.ac.kr/portal/na/ntt/selectNttInfo.do?nttSn=1435154&mi=13606"
+     class="news-link"
+     target="_blank"
+     rel="noopener noreferrer">[Link]</a>
+    </li>
+
+    
+    <li>
+  
     <span class="news-date">[2026.08.20]</span>
     김도희 교수가 중국 선양에서 개최된 IEEE CASE 2026에서 연구 결과를 발표하였습니다.
     <a href="/gallery/?gallery=ieee-case-2026"
