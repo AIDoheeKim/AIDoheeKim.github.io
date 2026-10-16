@@ -136,7 +136,7 @@ html[data-theme="dark"] {
   flex: 1.5;
   min-width: 0;
   align-self: flex-start;
-  margin-top: 12px;
+  margin-top: 16px;
   display: flex;
   justify-content: flex-end;
 }
