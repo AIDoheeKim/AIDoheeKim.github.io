@@ -5,6 +5,7 @@
 const galleries = [{"slug":"ieee-case-2026","title":"IEEE CASE 2026","date":"August 17–21, 2026","sortDate":"2026-08-19","location":"Shenyang, China","tag":"Conference","desc":"DOLab participated in IEEE CASE 2026 in Shenyang, China.","images":["/assets/img/gallery/ieee_case_2026_1.jpg","/assets/img/gallery/ieee_case_2026_2.jpg","/assets/img/gallery/ieee_case_2026_3.jpg","/assets/img/gallery/ieee_case_2026_4.jpg","/assets/img/gallery/ieee_case_2026_5.jpg","/assets/img/gallery/ieee_case_2026_6.jpg","/assets/img/gallery/ieee_case_2026_7.jpg"]},{"slug":"lg-electronics-executive-visit","title":"LG Electronics Executive Visit","date":"June 12, 2026","sortDate":"2026-06-12","location":"Changwon National University","tag":"Lab Events","desc":"LG Electronics executives visited DOLab.","images":["/assets/img/gallery/lg.jpg","/assets/img/gallery/lg1.jpg","/assets/img/gallery/lg2.jpg","/assets/img/gallery/lg3.jpg"]},{"slug":"2026-spring-joint-conference-industrial-engineering","title":"2026 Spring Joint Conference (Industrial Engineering)","date":"June 4, 2026","sortDate":"2026-06-04","location":"Gyeongju HICO","tag":"Conference","desc":"산업공학회 춘계공동학술대회 참가 및 발표.","images":["/assets/img/gallery/ie_spring_2026_1.jpg","/assets/img/gallery/ie_spring_2026_2.jpg","/assets/img/gallery/ie_spring_2026_3.jpg","/assets/img/gallery/ie_spring_2026_4.jpg"]},{"slug":"2026-teachers-day","title":"2026 Teacher's Day","date":"May 15, 2026","sortDate":"2026-05-15","location":"Changwon National University","tag":"Lab Events","desc":"김도희교수님 항상 감사합니다!","images":["/assets/img/gallery/teachersday_2026_1.jpg","/assets/img/gallery/teachersday_2026_2.jpg"]},{"slug":"2026-cherry-blossom","title":"2026 Cherry Blossom","date":"April 3, 2026","sortDate":"2026-04-03","location":"Changwon National University","tag":"Lab Events","desc":"DOLab's first seminar and cherry blossom.","images":["/assets/img/gallery/cherry_2026_1.jpg","/assets/img/gallery/cherry_2026_2.jpg","/assets/img/gallery/cherry_2026_3.jpg","/assets/img/gallery/cherry_2026_4.jpg","/assets/img/gallery/cherry_2026_5.jpg"]}];
 const galleryRoot = "/";
 const galleryImageWidths = [480,800,1400];
+const galleryImageVersion = "auto-orient-quality-85";
 
 galleries.sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));
 
@@ -28,7 +29,7 @@ function createGalleryImage(path, alt, className, sizes, loading = "lazy") {
     const stem = path.replace(/\.(jpe?g|png|tiff|gif)$/i, "");
     const source = document.createElement("source");
     source.type = "image/webp";
-    source.srcset = galleryImageWidths.map((width) => `${galleryImageUrl(stem)}-${width}.webp ${width}w`).join(", ");
+    source.srcset = galleryImageWidths.map((width) => `${galleryImageUrl(stem)}-${width}.webp?v=${encodeURIComponent(galleryImageVersion)} ${width}w`).join(", ");
     source.sizes = sizes;
     picture.appendChild(source);
   }
