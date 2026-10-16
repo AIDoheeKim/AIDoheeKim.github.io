@@ -134,14 +134,20 @@ html[data-theme="dark"] {
 
 .hero-right {
   flex: 1.5;
+  min-width: 0;
   display: flex;
   justify-content: flex-end;
 }
 
 .hero-right img {
+  display: block;
   max-width: 900px;
   width: 100%;
   height: auto;
+  /* Crop the supplied logo's transparent canvas without changing the image. */
+  aspect-ratio: 4 / 1;
+  object-fit: cover;
+  object-position: center;
   border-radius: 16px;
   filter: var(--dolab-logo-filter);
 }
@@ -424,6 +430,7 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
   }
 
   .hero-right {
+    width: 100%;
     justify-content: center;
   }
 
@@ -452,7 +459,7 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
     </p>
   </div>
   <div class="hero-right">
-    <img src="/assets/img/dolab-logo-wide.png" alt="DOLab Logo">
+    <img src="{{ '/assets/img/dolab-logo-wide.png' | relative_url | bust_file_cache }}" alt="DOLab — Data Optimization Lab" width="1448" height="1086">
   </div>
 </div>
 
