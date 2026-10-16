@@ -2,7 +2,7 @@
 
 - name: "국가연구실 2.0 (NRL 2.0)"
   image: /assets/img/partners/nrl-2.0.png
-  height: 60
+  height: 80
 
 - name: "LG전자 (LG Electronics)"
   image: /assets/img/partners/lg_logo.svg
