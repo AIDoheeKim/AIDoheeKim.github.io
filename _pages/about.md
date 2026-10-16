@@ -135,6 +135,8 @@ html[data-theme="dark"] {
 .hero-right {
   flex: 1.5;
   min-width: 0;
+  align-self: flex-start;
+  margin-top: 12px;
   display: flex;
   justify-content: flex-end;
 }
@@ -431,6 +433,8 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
 
   .hero-right {
     width: 100%;
+    align-self: auto;
+    margin-top: 0;
     justify-content: center;
   }
 
