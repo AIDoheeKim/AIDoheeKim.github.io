@@ -405,6 +405,7 @@ html[data-theme="dark"] {
 const galleries = {{ page.galleries | jsonify }};
 const galleryRoot = {{ '/' | relative_url | jsonify }};
 const galleryImageWidths = {% if site.imagemagick.enabled %}{{ site.imagemagick.widths | jsonify }}{% else %}[]{% endif %};
+const galleryImageVersion = {{ site.imagemagick.output_formats.webp | slugify | jsonify }};
 
 galleries.sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));
 
@@ -428,7 +429,7 @@ function createGalleryImage(path, alt, className, sizes, loading = "lazy") {
     const stem = path.replace(/\.(jpe?g|png|tiff|gif)$/i, "");
     const source = document.createElement("source");
     source.type = "image/webp";
-    source.srcset = galleryImageWidths.map((width) => `${galleryImageUrl(stem)}-${width}.webp ${width}w`).join(", ");
+    source.srcset = galleryImageWidths.map((width) => `${galleryImageUrl(stem)}-${width}.webp?v=${encodeURIComponent(galleryImageVersion)} ${width}w`).join(", ");
     source.sizes = sizes;
     picture.appendChild(source);
   }
