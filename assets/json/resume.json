@@ -4,16 +4,11 @@
     "label": "Assistant Professor | Ph.D.",
     "image": "",
     "email": "kimdohee@changwon.ac.kr",
-    "phone": "+82-55-213-3965",
-    "mobile": "+82-10-6254-6457",
     "url": "https://AIDoheeKim.github.io",
     "summary": "Assistant Professor at Changwon National University, GAST-Artificial Intelligence, Department of Artificial Intelligence Engineering. Head of AX Center, Department of Research Innovation, SMR² Platform National Research Laboratory.",
     "location": {
-      "address": "Room 207, International Exchange Education Center, 20 Changwondaehak-ro, Uichang-gu",
-      "postalCode": "51140",
-      "city": "Changwon-si",
-      "countryCode": "KR",
-      "region": "Gyeongsangnam-do"
+      "city": "Changwon",
+      "countryCode": "KR"
     },
     "profiles": []
   },

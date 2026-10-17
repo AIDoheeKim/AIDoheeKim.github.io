@@ -583,8 +583,7 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
   <div class="contact-box">
     <strong>Dohee Kim</strong><br>
     Department of Artificial Intelligence Engineering, Changwon National University<br>
-    국제교류교육원(86호관) 207호<br>
-    055-213-3965<br>
+    Changwon, South Korea<br>
     kimdohee@changwon.ac.kr
   </div>
 
