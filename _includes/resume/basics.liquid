@@ -17,6 +17,11 @@
           <a href="{{ content[1] }}" target="_blank" rel="noopener noreferrer">{{ content[1] }}</a>
         {% elsif content[0] == 'email' %}
           <a href="mailto:{{ content[1] }}" target="_blank">{{ content[1] }}</a>
+        {% elsif content[0] == 'summary' %}
+          {% assign summary_paragraphs = content[1] | newline_to_br | split: '<br />' %}
+          {% for summary_paragraph in summary_paragraphs %}
+            <p class="{% if forloop.last %}mb-0{% else %}mb-2{% endif %}">{{ summary_paragraph | strip }}</p>
+          {% endfor %}
         {% elsif content[0] == 'location' %}
           {{ content[1].city }},
           {% if content[1].countryCode == 'KR' %}South Korea{% else %}{{ content[1].countryCode }}{% endif %}
