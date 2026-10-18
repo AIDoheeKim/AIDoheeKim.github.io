@@ -176,11 +176,16 @@ ul.task-list input[type="checkbox"] {
   a:hover { text-decoration: none; }
   .navbar-brand {
     color: var(--global-text-color);
+    .navbar-logo {
+      display: block;
+      width: 85px;
+      height: auto;
+    }
     &.title {
       font-size: 1.45rem;
       font-weight: 900;
       letter-spacing: 0;
-      margin-left: 0;
+      margin-left: 8px;
       padding-left: 0;
     }
   }
@@ -208,6 +213,10 @@ ul.task-list input[type="checkbox"] {
       &:hover i::before { color: var(--global-theme-color); }
     }
   }
+}
+
+html[data-theme="dark"] .navbar-logo {
+  filter: brightness(0) invert(1);
 }
 
 .navbar-toggler {
