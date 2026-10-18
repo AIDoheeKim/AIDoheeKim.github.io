@@ -39,14 +39,14 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "TEACHING",
-          description: "Teaching experience and courses.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
         },{id: "nav-people",
           title: "PEOPLE",
-          description: "members of the lab",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
