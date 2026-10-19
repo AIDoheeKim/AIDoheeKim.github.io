@@ -9,7 +9,7 @@ galleries:
   - slug: moe-thandar-wynn-seminar-2026
     title: Moe Thandar Wynn Seminar at PNU
     date: August 31, 2026
-    sortDate: 2026-08-31
+    sortDate: "2026-08-31"
     location: Room 507, Engineering Building 10, Pusan National University
     tag: Seminar
     desc: DOLab joined Prof. Moe Thandar Wynn's (QUT) seminar at Pusan National University, exploring the connections between data, AI, and business processes.
@@ -22,7 +22,7 @@ galleries:
   - slug: ieee-case-2026
     title: IEEE CASE 2026
     date: August 17–21, 2026
-    sortDate: 2026-08-19
+    sortDate: "2026-08-17"
     location: Shenyang, China
     tag: Conference
     desc: DOLab participated in IEEE CASE 2026 in Shenyang, China.
@@ -38,7 +38,7 @@ galleries:
   - slug: lg-electronics-executive-visit
     title: LG Electronics Executive Visit
     date: June 12, 2026
-    sortDate: 2026-06-12
+    sortDate: "2026-06-12"
     location: Changwon National University
     tag: Lab Events
     desc: LG Electronics executives visited DOLab.
@@ -50,7 +50,7 @@ galleries:
   - slug: 2026-spring-joint-conference-industrial-engineering
     title: 2026 Spring Joint Conference (Industrial Engineering)
     date: June 4, 2026
-    sortDate: 2026-06-04
+    sortDate: "2026-06-04"
     location: Gyeongju HICO
     tag: Conference
     desc: 산업공학회 춘계공동학술대회 참가 및 발표.
@@ -62,7 +62,7 @@ galleries:
   - slug: 2026-teachers-day
     title: 2026 Teacher's Day
     date: May 15, 2026
-    sortDate: 2026-05-15
+    sortDate: "2026-05-15"
     location: Changwon National University
     tag: Lab Events
     desc: 김도희교수님 항상 감사합니다!
@@ -72,7 +72,7 @@ galleries:
   - slug: 2026-cherry-blossom
     title: 2026 Cherry Blossom
     date: April 3, 2026
-    sortDate: 2026-04-03
+    sortDate: "2026-04-03"
     location: Changwon National University
     tag: Lab Events
     desc: DOLab's first seminar and cherry blossom.
@@ -143,6 +143,9 @@ html[data-theme="dark"] {
 }
 
 .gallery-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 100%;
   padding: 0;
   font: inherit;
@@ -170,6 +173,12 @@ html[data-theme="dark"] {
   outline-offset: 3px;
 }
 
+.gallery-card > picture {
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
 .gallery-image {
   width: 100%;
   height: 210px;
@@ -181,6 +190,8 @@ html[data-theme="dark"] {
 
 .gallery-info {
   display: block;
+  width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -415,12 +426,10 @@ html[data-theme="dark"] {
 </div>
 
 <script>
-const galleries = {{ page.galleries | jsonify }};
+const galleries = {{ page.galleries | sort: 'sortDate' | reverse | jsonify }};
 const galleryRoot = {{ '/' | relative_url | jsonify }};
 const galleryImageWidths = {% if site.imagemagick.enabled %}{{ site.imagemagick.widths | jsonify }}{% else %}[]{% endif %};
 const galleryImageVersion = {{ site.imagemagick.output_formats.webp | slugify | jsonify }};
-
-galleries.sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));
 
 const grid = document.getElementById("galleryGrid");
 const modal = document.getElementById("galleryModal");
