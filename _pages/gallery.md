@@ -6,6 +6,20 @@ description:
 nav: true
 nav_order: 8
 galleries:
+  - slug: dax-innovation-talk-concert-2026
+    title: D.AX Innovation Talk Concert
+    date: October 19, 2026
+    sortDate: "2026-10-19"
+    location: Library 1F Lounge, Changwon National University
+    tag: Lab Events
+    desc: DOLab joined the D.AX talk concert, exploring AI in defense and future learning paths through research showcases and mentoring.
+    images:
+      - /assets/img/gallery/dax_2026_1.jpg
+      - /assets/img/gallery/dax_2026_2.jpg
+      - /assets/img/gallery/dax_2026_3.jpg
+      - /assets/img/gallery/dax_2026_4.jpg
+      - /assets/img/gallery/dax_2026_5.jpg
+
   - slug: moe-thandar-wynn-seminar-2026
     title: Moe Thandar Wynn Seminar at PNU
     date: August 31, 2026
