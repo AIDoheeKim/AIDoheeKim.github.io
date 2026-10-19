@@ -6,6 +6,19 @@ description:
 nav: true
 nav_order: 8
 galleries:
+  - slug: moe-thandar-wynn-seminar-2026
+    title: Moe Thandar Wynn Seminar at PNU
+    date: August 31, 2026
+    sortDate: 2026-08-31
+    location: Room 507, Engineering Building 10, Pusan National University
+    tag: Seminar
+    desc: DOLab joined Prof. Moe Thandar Wynn's (QUT) seminar at Pusan National University, exploring the connections between data, AI, and business processes.
+    images:
+      - /assets/img/gallery/pnu_wynn_seminar_2026_1.jpg
+      - /assets/img/gallery/pnu_wynn_seminar_2026_2.jpg
+      - /assets/img/gallery/pnu_wynn_seminar_2026_3.jpg
+      - /assets/img/gallery/pnu_wynn_seminar_2026_4.jpg
+
   - slug: ieee-case-2026
     title: IEEE CASE 2026
     date: August 17–21, 2026
