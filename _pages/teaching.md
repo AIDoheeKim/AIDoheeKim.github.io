@@ -42,13 +42,13 @@ nav_order: 6
 <div class="teaching-year">2026</div>
 
 <div class="teaching-item">
-<div class="teaching-title">Database and Big Data Systems</div>
+<div class="teaching-title">Database and Big Data Systems (AIB2005)</div>
 <div class="teaching-meta">Fall 2026 · Changwon National University · Graduate</div>
 <p class="teaching-role">Instructor – Lecturing, grading, practical sessions, and proctoring.</p>
 </div>
 
 <div class="teaching-item">
-<div class="teaching-title">Python Programming in the Age of AI</div>
+<div class="teaching-title">Python Programming in the Age of AI (GEA8810)</div>
 <div class="teaching-meta">Fall 2026 · Changwon National University · Undergraduate</div>
 <p class="teaching-role">Instructor – Lecturing, grading, practical sessions, and proctoring.</p>
 </div>
