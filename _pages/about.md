@@ -478,6 +478,15 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
   <h2 class="highlight-blue">Lab News</h2>
 
  <ul class="simple-news-list">
+    <li>
+      <span class="news-date">[2026.10.20]</span>
+      우리 연구실이 국립창원대학교에서 개최된 「방산 AX 혁신인재 학습설계 토크콘서트」에 참여하여 AI 기반 연구사례를 소개하고 학생들과 학습·진로 방향을 공유하였습니다.
+      <a href="https://www.changwon.ac.kr/portal/na/ntt/selectNttInfo.do?nttSn=1436004&amp;mi=13606"
+         class="news-link"
+         target="_blank"
+         rel="noopener noreferrer">[Link]</a>
+    </li>
+
     
     <li>
     <span class="news-date">[2026.10.13]</span>
