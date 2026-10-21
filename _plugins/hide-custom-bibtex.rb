@@ -1,16 +1,20 @@
+require 'bibtex'
+
 module Jekyll
   module HideCustomBibtex
     def hideCustomBibtex(input)
-	    keywords = @context.registers[:site].config['filtered_bibtex_keywords']
+      return '' if input.to_s.strip.empty?
 
-	    keywords.each do |keyword|
-		    input = input.gsub(/^.*\b#{keyword}\b *= *\{.*$\n/, '')
-	    end
-
-      # Clean superscripts in author lists
-      input = input.gsub(/^.*\bauthor\b *= *\{.*$\n/) { |line| line.gsub(/[*†‡§¶‖&^]/, '') }
-
-      return input
+      keywords = Array(@context.registers[:site].config['filtered_bibtex_keywords']).map { |key| key.to_s.downcase }
+      bibliography = BibTeX.parse(input.to_s)
+      # Remove complete fields, including multiline values and nested braces.
+      bibliography.entries.each_value do |entry|
+        entry.fields.delete_if { |key, _| keywords.include?(key.to_s.downcase) }
+        if entry[:author]
+          entry[:author] = entry[:author].to_s.gsub(/[*∗†‡§¶‖^]/, '')
+        end
+      end
+      bibliography.to_s
     end
   end
 end

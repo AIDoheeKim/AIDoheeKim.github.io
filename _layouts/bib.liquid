@@ -46,7 +46,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="publication-content {% if site.enable_publication_thumbnails %}col-sm-10{% else %}col-sm-12{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -160,6 +160,8 @@
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
+    {% assign entrymonth = '' %}
+    {% assign entryyear = '' %}
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
     {% endif %}
@@ -196,10 +198,12 @@
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
       {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
+        {% assign doi = entry.doi | remove: 'https://doi.org/' | remove: 'http://doi.org/' | remove: 'https://dx.doi.org/' | remove: 'http://dx.doi.org/' %}
+        <a href="https://doi.org/{{ doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
       {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+        {% assign arxiv = entry.arxiv | remove: 'https://arxiv.org/abs/' | remove: 'http://arxiv.org/abs/' | remove: 'https://arxiv.org/pdf/' | remove: 'http://arxiv.org/pdf/' | remove: '.pdf' %}
+        <a href="https://arxiv.org/abs/{{ arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
       <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% if entry.html %}

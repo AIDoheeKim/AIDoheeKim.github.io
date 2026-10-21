@@ -458,6 +458,8 @@ footer.sticky-bottom {
         }
       }
 
+      .publication-content { min-width: 0; overflow-wrap: break-word; }
+
       .title { font-weight: bolder; }
 
       .author {
@@ -503,6 +505,29 @@ footer.sticky-bottom {
       }
 
       .hidden.open { max-height: 100em; transition: all 0.15s ease; }
+
+      // Keep BibTeX formatting independent of inline code and search styles.
+      div.bibtex {
+        text-align: left;
+
+        &.hidden.open { max-height: none; }
+
+        figure.highlight { margin: 0.75rem 0; }
+
+        pre {
+          margin: 0;
+          white-space: pre-wrap;
+          overflow-wrap: anywhere;
+          word-break: normal;
+        }
+
+        code {
+          white-space: inherit;
+          overflow-wrap: inherit;
+          word-break: inherit;
+          color: var(--global-text-color);
+        }
+      }
 
       div.abstract.hidden { border: dashed 1px var(--global-bg-color); }
       div.abstract.hidden.open { border-color: var(--global-text-color); }
@@ -752,10 +777,6 @@ mjx-container[jax="CHTML"][display="true"] {
 
 /* Publications search highlight only */
 .publications mark,
-.publications mark[style],
-.publications span[style*="background"],
-.publications span[style*="color"],
-.publications .highlight,
 .publications .highlighted,
 .publications .search-highlight,
 .publications .search-match,
