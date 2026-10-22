@@ -480,6 +480,15 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
  <ul class="simple-news-list">
     <li>
       <span class="news-date">[2026.10.22]</span>
+      우리 연구실의 김선웅, 문경민, 하우진 학생이 베트남 하노이 FPT대학교에서 진행되는 「CWNU SW-DNA² 글로벌 프론티어 프로그램」의 글로벌 산학 해커톤에 참가하였습니다.
+      <a href="https://www.changwon.ac.kr/portal/na/ntt/selectNttInfo.do?mi=13606&amp;nttSn=1436335"
+         class="news-link"
+         target="_blank"
+         rel="noopener noreferrer">[Link]</a>
+    </li>
+
+    <li>
+      <span class="news-date">[2026.10.22]</span>
       김도희 교수가 「해군교육사령부–국방과학연구소 교육발전 통합세미나」에서 국방 AI 기술의 발전 방향과 해군 분야 적용 방안을 발표하였습니다.
       <a href="https://www.changwon.ac.kr/portal/na/ntt/selectNttInfo.do?mi=13606&amp;nttSn=1436277"
          class="news-link"
