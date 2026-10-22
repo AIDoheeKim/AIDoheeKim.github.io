@@ -479,6 +479,15 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
 
  <ul class="simple-news-list">
     <li>
+      <span class="news-date">[2026.10.22]</span>
+      김도희 교수가 「해군교육사령부–국방과학연구소 교육발전 통합세미나」에서 국방 AI 기술의 발전 방향과 해군 분야 적용 방안을 발표하였습니다.
+      <a href="https://www.changwon.ac.kr/portal/na/ntt/selectNttInfo.do?mi=13606&amp;nttSn=1436277"
+         class="news-link"
+         target="_blank"
+         rel="noopener noreferrer">[Link]</a>
+    </li>
+
+    <li>
       <span class="news-date">[2026.10.21]</span>
       <strong>Dohee Kim</strong> and <strong>Kyung-Hun Shin</strong> are serving as Guest Editors for the special issue
       <strong>Advances in Mathematical Foundations of Deep Learning and Optimization</strong> in <em>Mathematics</em>.
