@@ -1,0 +1,10 @@
+{% assign lab_news = site.data.lab_news | sort: 'date' | reverse %}
+{% assign news_limit = include.limit | default: lab_news.size %}
+<ul class="simple-news-list">
+  {% for item in lab_news limit: news_limit %}
+    <li>
+      <span class="news-date">[{{ item.date | date: '%Y.%m.%d' }}]</span>
+      {{ item.content }}
+    </li>
+  {% endfor %}
+</ul>

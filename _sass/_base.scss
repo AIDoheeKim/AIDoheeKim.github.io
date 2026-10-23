@@ -787,3 +787,33 @@ mjx-container[jax="CHTML"][display="true"] {
   -webkit-text-fill-color: #111111 !important;
   box-shadow: none !important;
 }
+
+// Shared homepage and news archive list
+.simple-news-list {
+  list-style-type: square;
+  padding-left: 22px;
+  margin-top: 18px;
+}
+
+.simple-news-list li {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--global-text-color);
+  margin-bottom: 12px;
+}
+
+.simple-news-list .news-date {
+  font-weight: 700;
+  color: var(--global-text-color);
+  margin-right: 6px;
+}
+
+.news-link {
+  margin-left: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.news-link:hover {
+  text-decoration: underline;
+}

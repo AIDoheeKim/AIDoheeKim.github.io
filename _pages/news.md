@@ -4,4 +4,4 @@ title: NEWS
 permalink: /news/
 ---
 
-{% include news.liquid %}
+{% include simple-news-list.liquid %}
