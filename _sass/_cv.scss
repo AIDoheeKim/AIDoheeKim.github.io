@@ -16,16 +16,41 @@ table.table-cv {
 }
 
 .cv .date-column {
+  flex: 0 0 100%;
+  max-width: 100%;
   width: 100%;
+  margin-bottom: 0.5rem;
+  text-align: left !important;
   transform: none;
 
   .badge {
-    max-width: 100%;
-    white-space: normal;
+    max-width: none;
+    white-space: nowrap;
+    text-transform: none !important;
+    font-variant-numeric: tabular-nums;
   }
 
   .location {
     white-space: normal;
+  }
+}
+
+.cv .date-column + div {
+  flex: 0 0 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+@media (min-width: 992px) {
+  .cv .date-column {
+    flex: 0 0 11.5rem;
+    max-width: 11.5rem;
+    margin-bottom: 0;
+  }
+
+  .cv .date-column + div {
+    flex: 1 1 0;
+    max-width: calc(100% - 11.5rem);
   }
 }
 
