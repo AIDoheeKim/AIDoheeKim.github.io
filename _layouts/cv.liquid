@@ -16,6 +16,7 @@ layout: default
             target="_blank"
             rel="noopener noreferrer"
             class="float-right"
+            aria-label="Download Dohee Kim's CV as a PDF"
           >
             <i class="fa-solid fa-file-pdf"></i>
           </a>
@@ -67,6 +68,7 @@ layout: default
             target="_blank"
             rel="noopener noreferrer"
             class="float-right"
+            aria-label="Download Dohee Kim's CV as a PDF"
           >
             <i class="fa-solid fa-file-pdf"></i>
           </a>
@@ -88,7 +90,8 @@ layout: default
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+            {% assign default_title = data[0] | capitalize %}
+            <h3 class="card-title font-weight-medium">{{ page.cv_section_titles[data[0]] | default: default_title }}</h3>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}
@@ -97,6 +100,8 @@ layout: default
                   {% include resume/education.liquid %}
                 {% when 'work' %}
                   {% include resume/work.liquid %}
+                {% when 'teaching' %}
+                  {% include resume/teaching.liquid %}
                 {% when 'volunteer' %}
                   {% include resume/volunteer.liquid %}
                 {% when 'projects' %}
@@ -107,6 +112,10 @@ layout: default
                   {% include resume/skills.liquid %}
                 {% when 'publications' %}
                   {% include resume/publications.liquid %}
+                {% when 'conferences' %}
+                  {% include resume/publications.liquid %}
+                {% when 'patents' %}
+                  {% include resume/patents.liquid %}
                 {% when 'languages' %}
                   {% include resume/languages.liquid %}
                 {% when 'interests' %}

@@ -5,7 +5,19 @@ title: CV
 nav: true
 nav_order: 5
 cv_pdf: CV_DoheeKim.pdf # you can also use external links here
-description: 
+description: "Updated September 2026."
+cv_section_titles:
+  basics: General Information
+  interests: Research Interests
+  work: Appointments and Experience
+  education: Education
+  teaching: Teaching Experience
+  awards: Awards and Honors
+  volunteer: Academic and Professional Services
+  publications: Journal Publications
+  conferences: Conference Presentations and Proceedings
+  patents: Patents
+  projects: Research Projects
 toc:
   sidebar: left
 ---
