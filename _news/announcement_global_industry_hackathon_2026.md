@@ -6,6 +6,7 @@ summary: >-
   우리 연구실의 김선웅, 문경민, 하우진 학생이 베트남 하노이 FPT대학교에서 진행되는
   「CWNU SW-DNA² 글로벌 프론티어 프로그램」의 글로벌 산학 해커톤에 참가하였습니다.
 inline: false
+related_url: https://www.changwon.ac.kr/portal/na/ntt/selectNttInfo.do?mi=13606&nttSn=1436335
 related_posts: false
 ---
 

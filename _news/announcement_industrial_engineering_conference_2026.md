@@ -4,6 +4,8 @@ title: 홍진영 학생, 2026 산업공학회 춘계공동학술대회 발표
 date: 2026-06-04 09:00:00+0900
 summary: 홍진영 학생이 2026 대한산업공학회 춘계공동학술대회에서 연구 결과를 발표하였습니다.
 inline: false
+related_url: /gallery/?gallery=2026-spring-joint-conference-industrial-engineering
+related_label: Photos
 related_posts: false
 ---
 

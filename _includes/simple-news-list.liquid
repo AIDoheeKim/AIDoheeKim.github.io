@@ -5,6 +5,13 @@
     <li>
       <span class="news-date">[{{ item.date | date: '%Y.%m.%d' }}]</span>
       <a href="{{ item.url | relative_url }}" class="news-summary">{{ item.summary | default: item.title | escape }}</a>
+      {% if item.related_url %}
+        {% if item.related_url contains '://' %}
+          <a href="{{ item.related_url | escape }}" class="news-link" target="_blank" rel="noopener noreferrer">[{{ item.related_label | default: 'Link' | escape }}]</a>
+        {% else %}
+          <a href="{{ item.related_url | relative_url | escape }}" class="news-link">[{{ item.related_label | default: 'Link' | escape }}]</a>
+        {% endif %}
+      {% endif %}
     </li>
   {% endfor %}
 </ul>

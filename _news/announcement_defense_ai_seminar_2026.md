@@ -6,6 +6,7 @@ summary: >-
   김도희 교수가 「해군교육사령부–국방과학연구소 교육발전 통합세미나」에서
   국방 AI 기술의 발전 방향과 해군 분야 적용 방안을 발표하였습니다.
 inline: false
+related_url: https://www.changwon.ac.kr/portal/na/ntt/selectNttInfo.do?mi=13606&nttSn=1436277
 related_posts: false
 ---
 
