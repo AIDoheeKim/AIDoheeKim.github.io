@@ -58,13 +58,57 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gallery/";
           },
-        },{id: "news-data-optimization-lab-dolab-officially-opened-on-december-22-2025-we-are-excited-to-begin-our-research-journey-in-data-driven-decision-making-and-optimization-at-changwon-national-university",
-          title: '🎉 Data Optimization Lab (DOLab) officially opened on December 22, 2025! We are...',
+        },{id: "news-dolab-officially-opened",
+          title: 'DOLab Officially Opened',
           description: "",
-          section: "News",},{id: "news-dr-dohee-kim-and-dr-kyung-hun-shin-are-serving-as-guest-editors-for-the-special-issue-advances-in-mathematical-foundations-of-deep-learning-and-optimization-in-mathematics-the-submission-deadline-is-july-31-2027-about-the-special-issue-this-special-issue-of-mathematics-an-open-access-journal-published-by-mdpi-focuses-on-mathematical-and-computational-methods-integrating-data-driven-learning-physical-knowledge-simulation-and-optimization-for-complex-engineering-systems-particular-interest-is-given-to-methods-that-enable-reliable-ai-and-optimization-under-limited-data-physical-laws-operational-constraints-uncertainty-and-dynamic-environments-topics-of-interest-physics-informed-and-structure-informed-learning-mathematical-modeling-of-dynamical-systems-surrogate-and-reduced-order-modeling-constrained-multi-objective-robust-and-stochastic-optimization-uncertainty-quantification-and-optimal-control-reinforcement-learning-and-learning-based-decision-making-digital-twins-and-intelligent-engineering-systems-prediction-simulation-and-optimization-for-energy-manufacturing-transportation-and-infrastructure-original-research-methodological-studies-mathematically-grounded-applications-and-review-articles-are-welcome-guest-editors-dr-dohee-kim-department-of-artificial-intelligence-engineering-changwon-national-university-republic-of-korea-dr-kyung-hun-shin-department-of-ai-electrical-engineering-changwon-national-university-republic-of-korea-submission-information-deadline-for-manuscript-submissions-july-31-2027-special-issue-website-view-details-and-submission-information-flyer-download-the-special-issue-flyer-pdf-editorial-office-mathematics-mdpi-com",
-          title: '📢 Dr. Dohee Kim and Dr. Kyung-Hun Shin are serving as Guest Editors...',
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_dolab_opening/";
+            },},{id: "news-홍진영-학생-2026-산업공학회-춘계공동학술대회-발표",
+          title: '홍진영 학생, 2026 산업공학회 춘계공동학술대회 발표',
           description: "",
-          section: "News",},{id: "projects-",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_industrial_engineering_conference_2026/";
+            },},{id: "news-2026년-국가연구실-2-0-사업-선정",
+          title: '2026년 국가연구실 2.0 사업 선정',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_national_research_lab_2026/";
+            },},{id: "news-헬스케어제품-멀티모달형-ai-플랫폼-기반구축-사업-선정",
+          title: '헬스케어제품 멀티모달형 AI 플랫폼 기반구축 사업 선정',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_healthcare_multimodal_ai_2026/";
+            },},{id: "news-ieee-case-2026-연구-발표",
+          title: 'IEEE CASE 2026 연구 발표',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_ieee_case_2026/";
+            },},{id: "news-ai-원전제조-혁신연구센터-산학연계-공동연구-착수",
+          title: 'AI-원전제조 혁신연구센터 산학연계 공동연구 착수',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_nuclear_manufacturing_research_2026/";
+            },},{id: "news-방산-ax-혁신인재-학습설계-토크콘서트-참여",
+          title: '방산 AX 혁신인재 학습설계 토크콘서트 참여',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_dax_talk_concert_2026/";
+            },},{id: "news-guest-editors-for-a-special-issue-of-mathematics",
+          title: 'Guest Editors for a Special Issue of Mathematics',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_mathematics_special_issue/";
+            },},{id: "news-해군교육사령부-국방과학연구소-통합세미나-발표",
+          title: '해군교육사령부–국방과학연구소 통합세미나 발표',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_defense_ai_seminar_2026/";
+            },},{id: "news-cwnu-sw-dna-글로벌-산학-해커톤-참가",
+          title: 'CWNU SW-DNA² 글로벌 산학 해커톤 참가',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_global_industry_hackathon_2026/";
+            },},{id: "projects-",
           title: '',
           description: "첨단산업 인재양성 부트캠프사업(인공지능분야)",
           section: "Projects",},{id: "projects-",
