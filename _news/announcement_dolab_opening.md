@@ -2,7 +2,8 @@
 layout: post
 title: DOLab Officially Opened
 date: 2025-12-22 09:00:00+0900
-inline: true
+summary: Data Optimization Lab (DOLab) officially opened on December 22, 2025!
+inline: false
 related_posts: false
 ---
 
