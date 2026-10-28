@@ -4,8 +4,7 @@
   {% for item in lab_news limit: news_limit %}
     <li>
       <span class="news-date">[{{ item.date | date: '%Y.%m.%d' }}]</span>
-      {{ item.summary | default: item.title | escape }}
-      <a href="{{ item.url | relative_url }}" class="news-link" aria-label="Read more: {{ item.title | escape }}">[Read more]</a>
+      <a href="{{ item.url | relative_url }}" class="news-summary">{{ item.summary | default: item.title | escape }}</a>
     </li>
   {% endfor %}
 </ul>
