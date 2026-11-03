@@ -108,6 +108,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_global_industry_hackathon_2026/";
+            },},{id: "news-김예원-김혜빈-학생-lg전자와-함께하는-ax-해커톤-대상-수상",
+          title: '김예원·김혜빈 학생, LG전자와 함께하는 AX 해커톤 대상 수상',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_lg_ax_hackathon_award_2026/";
             },},{id: "projects-",
           title: '',
           description: "첨단산업 인재양성 부트캠프사업(인공지능분야)",
