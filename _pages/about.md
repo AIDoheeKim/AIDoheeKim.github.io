@@ -276,6 +276,7 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
 .lab-news-more {
   margin-left: 22px;
   font-size: 17px;
+  font-weight: 700;
   line-height: 1.8;
 }
 
