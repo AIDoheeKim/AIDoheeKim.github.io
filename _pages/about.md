@@ -470,23 +470,23 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
   <div class="research-grid">
     <div class="research-card">
       <h3>Time Series Analysis</h3>
-      <p>Modeling and forecasting sequential data for real-world applications.</p>
+      <p>Modeling and forecasting sequential data for real-world applications</p>
     </div>
     <div class="research-card">
       <h3>Machine / Deep Learning</h3>
-      <p>Developing intelligent models using data-driven learning methods.</p>
+      <p>Developing intelligent models using data-driven learning methods</p>
     </div>
     <div class="research-card">
       <h3>Optimization</h3>
-      <p>Solving complex decision-making problems with mathematical optimization.</p>
+      <p>Solving complex decision-making problems with mathematical optimization</p>
     </div>
     <div class="research-card">
       <h3>Explainable AI</h3>
-      <p>Making AI models interpretable, reliable, and transparent.</p>
+      <p>Making AI models interpretable, reliable, and transparent</p>
     </div>
     <div class="research-card">
       <h3>Multi-modal AI</h3>
-      <p>Combining multiple types of data for advanced AI systems.</p>
+      <p>Combining multiple types of data for advanced AI systems</p>
     </div>
   </div>
 </div>

@@ -101,39 +101,26 @@ galleries:
 <style>
 :root {
   --gallery-surface: var(--global-card-bg-color);
-  --gallery-surface-muted: #f3f4f6;
+  --gallery-surface-muted: var(--global-code-bg-color);
   --gallery-text: var(--global-text-color);
   --gallery-text-muted: var(--global-text-color-light);
   --gallery-border: var(--global-divider-color);
   --gallery-card-shadow: 0 6px 18px rgba(0,0,0,0.07);
   --gallery-modal-shadow: 0 20px 60px rgba(0,0,0,0.25);
-  --gallery-date-bg: #f3f4f6;
-  --gallery-date-text: #374151;
-  --gallery-tag-bg: #dbeafe;
-  --gallery-tag-text: #1d4ed8;
-  --gallery-accent: #1d4ed8;
-  --gallery-label: #059669;
-  --gallery-control-bg: #ffffff;
-  --gallery-control-text: #111827;
+  --gallery-date-bg: var(--global-code-bg-color);
+  --gallery-date-text: var(--global-text-color);
+  --gallery-tag-bg: var(--global-code-bg-color);
+  --gallery-tag-text: var(--global-theme-color);
+  --gallery-accent: var(--global-theme-color);
+  --gallery-label: var(--global-theme-color);
+  --gallery-control-bg: var(--global-card-bg-color);
+  --gallery-control-text: var(--global-text-color);
   --gallery-backdrop: rgba(0,0,0,0.65);
 }
 
 html[data-theme="dark"] {
-  --gallery-surface: var(--global-card-bg-color);
-  --gallery-surface-muted: #202124;
-  --gallery-text: var(--global-text-color);
-  --gallery-text-muted: #b7bbc3;
-  --gallery-border: var(--global-divider-color);
   --gallery-card-shadow: 0 8px 24px rgba(0,0,0,0.35);
   --gallery-modal-shadow: 0 24px 70px rgba(0,0,0,0.55);
-  --gallery-date-bg: rgba(255,255,255,0.08);
-  --gallery-date-text: #d1d5db;
-  --gallery-tag-bg: rgba(34,211,238,0.16);
-  --gallery-tag-text: #67e8f9;
-  --gallery-accent: var(--global-theme-color);
-  --gallery-label: #34d399;
-  --gallery-control-bg: #2f3035;
-  --gallery-control-text: #f3f4f6;
   --gallery-backdrop: rgba(0,0,0,0.82);
 }
 

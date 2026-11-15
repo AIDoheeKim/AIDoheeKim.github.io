@@ -4,9 +4,9 @@ title: Guest Editors for a Special Issue of Mathematics
 date: 2026-10-21 09:00:00+0900
 summary: >-
   Dohee Kim and Kyung-Hun Shin are serving as Guest Editors for the special issue
-  Advances in Mathematical Foundations of Deep Learning and Optimization in Mathematics.
+  Advances in Mathematical Foundations of Deep Learning and Optimization in Mathematics
 inline: false
-related_url: https://www.mdpi.com/si/291456
+redirect: https://www.mdpi.com/si/291456
 related_posts: false
 ---
 

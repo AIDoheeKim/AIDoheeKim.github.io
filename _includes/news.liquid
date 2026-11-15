@@ -30,7 +30,17 @@
           <tr>
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
-              {% if item.inline %}
+              {% if item.redirect %}
+                {% assign news_url = item.redirect %}
+                {% if news_url == true %}
+                  {% assign news_url = '/' %}
+                {% endif %}
+                {% if news_url contains '://' %}
+                  <a class="news-title" href="{{ news_url | escape }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }}</a>
+                {% else %}
+                  <a class="news-title" href="{{ news_url | relative_url | escape }}">{{ item.title | escape }}</a>
+                {% endif %}
+              {% elsif item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>

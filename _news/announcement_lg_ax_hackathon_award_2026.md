@@ -2,9 +2,9 @@
 layout: post
 title: 김예원·김혜빈 학생, LG전자와 함께하는 AX 해커톤 대상 수상
 date: 2026-10-30 09:00:00+0900
-summary: 우리 연구실의 김예원, 김혜빈 학생이 LG전자와 함께하는 AX 해커톤에서 대상(국립창원대총장상)을 수상하였습니다.
+summary: 우리 연구실의 김예원, 김혜빈 학생이 LG전자와 함께하는 AX 해커톤에서 대상(국립창원대총장상)을 수상하였습니다
 inline: false
-related_url: https://www.changwon.ac.kr/portal/na/ntt/selectNttInfo.do?mi=13606&nttSn=1442279
+redirect: https://www.changwon.ac.kr/portal/na/ntt/selectNttInfo.do?mi=13606&nttSn=1442279
 related_posts: false
 ---
 
