@@ -15,6 +15,7 @@ galleries:
     desc: DOLab participated in KDBC 2026 at Yonsei University, presenting research in oral and poster sessions.
     images:
       - /assets/img/gallery/kdbc_2026_1.jpg
+      - /assets/img/gallery/kdbc_2026_2.jpg
       - /assets/img/gallery/kdbc_2026_3.jpg
       - /assets/img/gallery/kdbc_2026_4.jpg
       - /assets/img/gallery/kdbc_2026_5.jpg
