@@ -6,6 +6,24 @@ description:
 nav: true
 nav_order: 8
 galleries:
+  - slug: kdbc-2026
+    title: KDBC 2026
+    date: November 13–14, 2026
+    sortDate: "2026-11-13"
+    location: Yonsei University, Sinchon Campus
+    tag: Conference
+    desc: DOLab participated in KDBC 2026 at Yonsei University, presenting research in oral and poster sessions.
+    images:
+      - /assets/img/gallery/kdbc_2026_1.jpg
+      - /assets/img/gallery/kdbc_2026_3.jpg
+      - /assets/img/gallery/kdbc_2026_4.jpg
+      - /assets/img/gallery/kdbc_2026_5.jpg
+      - /assets/img/gallery/kdbc_2026_6.jpg
+      - /assets/img/gallery/kdbc_2026_7.jpg
+      - /assets/img/gallery/kdbc_2026_8.jpg
+      - /assets/img/gallery/kdbc_2026_9.jpg
+      - /assets/img/gallery/kdbc_2026_10.jpg
+
   - slug: dax-innovation-talk-concert-2026
     title: D.AX Innovation Talk Concert
     date: October 19, 2026
