@@ -24,6 +24,17 @@ galleries:
       - /assets/img/gallery/kdbc_2026_9.jpg
       - /assets/img/gallery/kdbc_2026_10.jpg
 
+  - slug: hanwha-systems-visit-seminar-2026
+    title: Hanwha Systems Visit & Seminar
+    date: November 11, 2026
+    sortDate: "2026-11-11"
+    location: Hanwha Systems
+    tag: Lab Events
+    desc: DOLab visited Hanwha Systems for a company tour and attended a seminar lecture delivered by Prof. Dohee Kim.
+    images:
+      - /assets/img/gallery/hanwha_systems_2026_2.jpg
+      - /assets/img/gallery/hanwha_systems_2026_1.jpg
+
   - slug: dax-innovation-talk-concert-2026
     title: D.AX Innovation Talk Concert
     date: October 19, 2026
