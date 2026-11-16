@@ -113,6 +113,16 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_lg_ax_hackathon_award_2026/";
+            },},{id: "news-한화시스템-기업탐방-및-세미나-참여",
+          title: '한화시스템 기업탐방 및 세미나 참여',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_hanwha_systems_visit_2026/";
+            },},{id: "news-kdbc-2026-참가-및-연구-발표",
+          title: 'KDBC 2026 참가 및 연구 발표',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_kdbc_2026/";
             },},{id: "projects-",
           title: '',
           description: "첨단산업 인재양성 부트캠프사업(인공지능분야)",
