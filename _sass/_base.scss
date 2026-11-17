@@ -196,7 +196,7 @@ ul.task-list input[type="checkbox"] {
   }
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
+    font-weight: 700;
     color: var(--global-theme-color);
     &:hover { color: var(--global-hover-color); }
   }
@@ -815,15 +815,5 @@ mjx-container[jax="CHTML"][display="true"] {
 
 .simple-news-list .news-summary:hover,
 .simple-news-list .news-summary:focus-visible {
-  text-decoration: underline;
-}
-
-.news-link {
-  margin-left: 6px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.news-link:hover {
   text-decoration: underline;
 }

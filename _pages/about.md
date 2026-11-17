@@ -460,9 +460,6 @@ html[data-theme="dark"] .partner-logo.lg-electronics img {
   <h2 class="highlight-blue"><a href="{{ "/news/" | relative_url }}" style="color: inherit;">Lab News</a></h2>
 
   {% include simple-news-list.liquid limit=4 %}
-  <div class="lab-news-more">
-    <a href="{{ '/news/' | relative_url }}" aria-label="랩뉴스 전체 보기">[더보기]</a>
-  </div>
 </div>
 
 <div class="dolab-section">

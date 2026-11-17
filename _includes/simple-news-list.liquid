@@ -13,13 +13,6 @@
       {% else %}
         <a href="{{ news_url | relative_url | escape }}" class="news-summary">{{ item.summary | default: item.title | escape }}</a>
       {% endif %}
-      {% if item.related_url %}
-        {% if item.related_url contains '://' %}
-          <a href="{{ item.related_url | escape }}" class="news-link" target="_blank" rel="noopener noreferrer">[{{ item.related_label | default: 'Link' | escape }}]</a>
-        {% else %}
-          <a href="{{ item.related_url | relative_url | escape }}" class="news-link">[{{ item.related_label | default: 'Link' | escape }}]</a>
-        {% endif %}
-      {% endif %}
     </li>
   {% endfor %}
 </ul>
