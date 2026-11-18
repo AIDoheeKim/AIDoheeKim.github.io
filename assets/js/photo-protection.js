@@ -1,0 +1,1 @@
+(()=>{function t(t){t.target instanceof Element&&t.target.closest(".protected-photo")&&t.preventDefault()}document.addEventListener("contextmenu",t),document.addEventListener("dragstart",t)})();

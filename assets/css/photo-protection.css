@@ -1,0 +1,1 @@
+.protected-photo{display:block;position:relative;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}.protected-photo::after{content:"";position:absolute;inset:0}.protected-photo img{pointer-events:none;-webkit-user-drag:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
