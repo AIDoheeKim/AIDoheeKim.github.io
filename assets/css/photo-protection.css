@@ -1,0 +1,23 @@
+/* Discourage casual saving. Public image URLs still require server-side access control to restrict. */
+.protected-photo {
+  display: block;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Keep the image out of native image menus while clicks still reach gallery buttons. */
+.protected-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.protected-photo img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

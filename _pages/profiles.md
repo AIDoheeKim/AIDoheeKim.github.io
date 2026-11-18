@@ -5,6 +5,7 @@ title: PEOPLE
 description: 
 nav: true
 nav_order: 7
+protect_photos: true
 ---
 
 <style>
@@ -42,6 +43,11 @@ nav_order: 7
 .people-card.single {
   max-width: 560px;
   margin: 0 auto;
+}
+
+.people-photo-frame {
+  flex: 0 0 160px;
+  width: 160px;
 }
 
 .people-photo {
@@ -129,6 +135,11 @@ nav_order: 7
     background: var(--global-card-bg-color);
   }
 
+  .people-photo-frame {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
   .people-info {
     padding: 1.1rem;
   }
@@ -140,11 +151,14 @@ nav_order: 7
   <div class="people-section-title">Professor</div>
 
   <div class="people-card professor">
-    <img
-      class="people-photo"
-      src="/assets/img/DoheeKim.png"
-      alt="Dohee Kim"
-    >
+    <span class="people-photo-frame protected-photo">
+      <img
+        class="people-photo"
+        draggable="false"
+        src="/assets/img/DoheeKim.png"
+        alt="Dohee Kim"
+      >
+    </span>
 
     <div class="people-info">
       <div class="people-name">Dohee Kim</div>
@@ -163,11 +177,14 @@ nav_order: 7
   <div class="people-section-title">Researcher</div>
 
   <div class="people-card single">
-    <img
-      class="people-photo"
-      src="/assets/img/jo_sangmin.jpg"
-      alt="Sangmin Jo"
-    >
+    <span class="people-photo-frame protected-photo">
+      <img
+        class="people-photo"
+        draggable="false"
+        src="/assets/img/jo_sangmin.jpg"
+        alt="Sangmin Jo"
+      >
+    </span>
 
     <div class="people-info">
       <div class="people-name">
@@ -195,11 +212,14 @@ nav_order: 7
   </div>
 
   <div class="people-card single">
-    <img
-      class="people-photo"
-      src="/assets/img/hong_jinyoung.jpg"
-      alt="Jinyoung Hong"
-    >
+    <span class="people-photo-frame protected-photo">
+      <img
+        class="people-photo"
+        draggable="false"
+        src="/assets/img/hong_jinyoung.jpg"
+        alt="Jinyoung Hong"
+      >
+    </span>
 
     <div class="people-info">
       <div class="people-name">Jinyoung Hong</div>
@@ -217,11 +237,14 @@ nav_order: 7
   <div class="people-section-title">Master's Course</div>
 
   <div class="people-card single">
-    <img
-      class="people-photo"
-      src="/assets/img/park_jaehyeon.jpg"
-      alt="Jaehyeon Park"
-    >
+    <span class="people-photo-frame protected-photo">
+      <img
+        class="people-photo"
+        draggable="false"
+        src="/assets/img/park_jaehyeon.jpg"
+        alt="Jaehyeon Park"
+      >
+    </span>
 
     <div class="people-info">
       <div class="people-name">Jaehyeon Park</div>
@@ -241,11 +264,14 @@ nav_order: 7
   <div class="people-grid">
 
     <div class="people-card">
-      <img
-        class="people-photo"
-        src="/assets/img/moon_kyeongmin.png"
-        alt="Kyeongmin Moon"
-      >
+      <span class="people-photo-frame protected-photo">
+        <img
+          class="people-photo"
+          draggable="false"
+          src="/assets/img/moon_kyeongmin.png"
+          alt="Kyeongmin Moon"
+        >
+      </span>
 
       <div class="people-info">
         <div class="people-name">Kyeongmin Moon</div>
@@ -261,11 +287,14 @@ nav_order: 7
 
 
     <div class="people-card">
-      <img
-        class="people-photo"
-        src="/assets/img/kim_yewon.jpg"
-        alt="Yewon Kim"
-      >
+      <span class="people-photo-frame protected-photo">
+        <img
+          class="people-photo"
+          draggable="false"
+          src="/assets/img/kim_yewon.jpg"
+          alt="Yewon Kim"
+        >
+      </span>
 
       <div class="people-info">
         <div class="people-name">Yewon Kim</div>
@@ -281,11 +310,14 @@ nav_order: 7
 
 
     <div class="people-card">
-      <img
-        class="people-photo"
-        src="/assets/img/ha_ujin.jpg"
-        alt="Ujin Ha"
-      >
+      <span class="people-photo-frame protected-photo">
+        <img
+          class="people-photo"
+          draggable="false"
+          src="/assets/img/ha_ujin.jpg"
+          alt="Ujin Ha"
+        >
+      </span>
 
       <div class="people-info">
         <div class="people-name">Ujin Ha</div>
@@ -301,11 +333,14 @@ nav_order: 7
 
 
     <div class="people-card">
-      <img
-        class="people-photo"
-        src="/assets/img/kim_hyebin.jpg"
-        alt="Hyebin Kim"
-      >
+      <span class="people-photo-frame protected-photo">
+        <img
+          class="people-photo"
+          draggable="false"
+          src="/assets/img/kim_hyebin.jpg"
+          alt="Hyebin Kim"
+        >
+      </span>
 
       <div class="people-info">
         <div class="people-name">Hyebin Kim</div>
@@ -321,11 +356,14 @@ nav_order: 7
 
 
     <div class="people-card">
-      <img
-        class="people-photo"
-        src="/assets/img/kim_sunwoong.jpg"
-        alt="Sunwoong Kim"
-      >
+      <span class="people-photo-frame protected-photo">
+        <img
+          class="people-photo"
+          draggable="false"
+          src="/assets/img/kim_sunwoong.jpg"
+          alt="Sunwoong Kim"
+        >
+      </span>
 
       <div class="people-info">
         <div class="people-name">Sunwoong Kim</div>

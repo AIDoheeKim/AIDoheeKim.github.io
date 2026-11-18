@@ -5,6 +5,7 @@ title: GALLERY
 description:
 nav: true
 nav_order: 8
+protect_photos: true
 galleries:
   - slug: kdbc-2026
     title: KDBC 2026
@@ -325,6 +326,7 @@ html[data-theme="dark"] {
 
 .gallery-arrow {
   position: absolute;
+  z-index: 1;
   top: 50%;
   transform: translateY(-50%);
   width: 38px;
@@ -476,6 +478,7 @@ function galleryImageUrl(path) {
 
 function createGalleryImage(path, alt, className, sizes, loading = "lazy") {
   const picture = document.createElement("picture");
+  picture.className = "protected-photo";
   const originalUrl = galleryImageUrl(path);
 
   if (galleryImageWidths.length && /\.(jpe?g|png|tiff|gif)$/i.test(path)) {
@@ -491,6 +494,7 @@ function createGalleryImage(path, alt, className, sizes, loading = "lazy") {
   img.className = className;
   img.alt = alt;
   img.loading = loading;
+  img.draggable = false;
   img.decoding = "async";
   img.addEventListener("error", () => {
     const source = picture.querySelector("source");
